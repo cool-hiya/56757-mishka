@@ -1,0 +1,37 @@
+.featured-item {
+    border: 1px solid black;
+    padding: 34px 30px;
+}
+
+.featured-item__title {
+    font-size: 25px;
+    margin: 0 0 5px;
+    font-family: "Opens Sans Bold";
+}
+
+.featured-item__lable {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #63d1bb;
+    font-family: "Opens Sans Bold";
+}
+
+.featured-item__description {
+    margin: 30px 0;
+    line-height: 25px;
+    font-size: 15px;
+    color: #444444;
+}
+
+.featured-item__img {
+    margin-bottom: 30px;
+}
+
+.featured-item__price {
+    font-size: 17px;
+    font-family: "Opens Sans Bold";
+    color: #444444;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}

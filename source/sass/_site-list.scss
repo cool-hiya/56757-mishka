@@ -1,0 +1,21 @@
+.site-list {
+    padding: 0;
+    margin: 0;
+}
+
+.site-list__item {
+    list-style-type: none;
+    padding: 30px 30px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    cursor: pointer;
+    &:not(:last-child) {
+        margin-bottom: -1px;
+    }
+    a {
+        font-family: "Opens Sans Bold";
+        font-size: 17px;
+        color: #000000;
+        text-decoration: none;
+    }
+}

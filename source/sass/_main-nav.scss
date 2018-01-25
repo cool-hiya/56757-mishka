@@ -1,0 +1,17 @@
+.main-nav__menu-toggle {
+    font-size: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    &:after {
+        content: url("/img/icon-menu-open.svg");
+        width: 20px;
+        height: 14px;
+        display: inline-block;
+    }
+}
