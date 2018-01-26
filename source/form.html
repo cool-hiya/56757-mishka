@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet" />
   <title>Мишка</title>
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo-link" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка" />
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -18,10 +20,10 @@
           <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a>Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
@@ -40,12 +42,12 @@
       <fieldset class="order-form__fieldset fieldset">
         <legend class="fieldset__legend">Тип</legend>
         <p class="radio">
-          <label class="radio__label" for="accs">Аксессуар для интерьера</label>
           <input class="radio__input" type="radio" name="type" value="accs" id="accs" />
+          <label class="radio__label" for="accs">Аксессуар для интерьера</label>
         </p>
         <p class="radio">
-          <label class="radio__label" for="toy">Детская игрушка</label>
           <input class="radio__input" type="radio" name="type" value="toy" id="toy" />
+          <label class="radio__label" for="toy">Детская игрушка</label>
         </p>
       </fieldset>
       <fieldset class="order-form__fieldset fieldset">
@@ -117,16 +119,16 @@
     </form>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social">
-      <b class="social__title">Давайте дружить!</b>
-      <ul class="social__list">
-        <li class="social__item">
+    <div class="page-footer__social socials">
+      <b class="socials__title visually-hidden">Давайте дружить!</b>
+      <ul class="socials__list">
+        <li class="socials__item social">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </li>
-        <li class="social__item">
+        <li class="socials__item social">
           <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Facebook</a>
         </li>
-        <li class="social__item">
+        <li class="socials__item social">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Twitter</a>
         </li>
       </ul>
