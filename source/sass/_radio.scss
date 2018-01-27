@@ -21,7 +21,7 @@
     border-radius: 50%;
 }
 
-.radio__input:checked+.radio__label::before {
+.radio__input:checked + .radio__label::before {
     box-shadow: inset 0 0 0 8px #ffffff;
     background-color: #62d1ba;
 }

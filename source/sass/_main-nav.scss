@@ -8,7 +8,8 @@
     position: absolute;
     right: 30px;
     top: 30px;
-    &:after {
+
+    &::after {
         content: url("/img/icon-menu-open.svg");
         width: 20px;
         height: 14px;

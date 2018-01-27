@@ -9,9 +9,11 @@
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
     cursor: pointer;
+
     &:not(:last-child) {
         margin-bottom: -1px;
     }
+
     a {
         font-family: "Open Sans Bold", sans-serif;
         font-size: 17px;

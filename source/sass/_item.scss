@@ -26,14 +26,14 @@
 }
 
 .item__order {
-    font-size: 0px;
+    font-size: 0;
     border: 0;
     padding: 0;
     display: inline-block;
     outline: none;
 }
 
-.item__order:after {
+.item__order::after {
     content: url("/img/icon-cart.svg");
     width: 20px;
     height: 20px;
