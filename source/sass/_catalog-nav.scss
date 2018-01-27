@@ -15,7 +15,9 @@
         text-decoration: none;
         color: #ffffff;
         font-size: 19px;
-        font-family: "Open Sans Bold", sans-serif;
+
+        @include setFontBold;
+
         display: inline-block;
         max-width: 150px;
     }

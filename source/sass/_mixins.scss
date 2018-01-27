@@ -1,0 +1,9 @@
+//Шрифты
+
+@mixin setFontNormal {
+    font-family: "Open Sans", sans-serif;
+}
+
+@mixin setFontBold {
+    font-family: "Open Sans Bold", sans-serif;
+}

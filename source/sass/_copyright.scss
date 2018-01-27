@@ -1,6 +1,8 @@
 .copyright__text {
     font-size: 19px;
-    font-family: "Open Sans Bold", sans-serif;
+
+    @include setFontBold;
+
     margin-right: 30px;
 }
 

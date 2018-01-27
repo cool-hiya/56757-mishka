@@ -4,7 +4,9 @@
 
 .checkbox__label {
     font-size: 17px;
-    font-family: "Open Sans Bold", sans-serif;
+
+    @include setFontBold;
+
     cursor: pointer;
 }
 

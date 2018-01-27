@@ -29,6 +29,7 @@
 @import "radio";
 @import "checkbox";
 @import "control";
+@import "mixins";
 
 @font-face {
     font-family: "Open Sans";
@@ -45,7 +46,8 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    @include setFontNormal;
+
     margin: 0;
 }
 

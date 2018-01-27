@@ -5,7 +5,9 @@
 
 .advantages__title {
     font-size: 25px;
-    font-family: "Open San Bold", sans-serif;
+
+    @include setFontNormal;
+
     border: 1px solid black;
     margin: 0;
 }
@@ -18,7 +20,9 @@
 .advantages__item {
     list-style-type: none;
     font-size: 17px;
-    font-family: "Open Sans Bold", sans-serif;
+
+    @include setFontBold;
+
     margin-top: 30px;
 }
 

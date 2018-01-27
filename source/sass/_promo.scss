@@ -6,7 +6,9 @@
 .promo__title {
     margin: 0;
     font-size: 17px;
-    font-family: "Open Sans Bold", sans-serif;
+
+    @include setFontBold;
+
     margin-bottom: 20px;
 }
 

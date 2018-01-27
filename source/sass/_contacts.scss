@@ -6,7 +6,9 @@
 .contacts__title {
     margin: 0;
     font-size: 18px;
-    font-family: "Open Sans Bold", sans-serif;
+
+    @include setFontBold;
+
     margin-bottom: 25px;
 }
 
