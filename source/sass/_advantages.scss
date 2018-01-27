@@ -5,9 +5,7 @@
 
 .advantages__title {
     font-size: 25px;
-
-    @include setFontNormal;
-
+    font-family: $fontBold;
     border: 1px solid black;
     margin: 0;
 }
@@ -20,9 +18,7 @@
 .advantages__item {
     list-style-type: none;
     font-size: 17px;
-
-    @include setFontBold;
-
+    font-family: $fontBold;
     margin-top: 30px;
 }
 

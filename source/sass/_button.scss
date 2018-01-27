@@ -1,5 +1,6 @@
 .button {
-    @include setFontBold;
+    font-family: $fontBold;
+
     @include setBorder;
 
     font-size: 17px;

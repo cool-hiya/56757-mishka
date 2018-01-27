@@ -7,6 +7,5 @@
     font-size: 17px;
     color: #63d1bb;
     text-transform: uppercase;
-
-    @include setFontBold;
+    font-family: $fontBold;
 }

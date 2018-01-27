@@ -6,9 +6,7 @@
 .size__item {
     display: inline-block;
     font-size: 17px;
-
-    @include setFontBold;
-
+    font-family: $fontBold;
     text-transform: uppercase;
     color: #444444;
     width: 80px;

@@ -4,8 +4,7 @@
 }
 
 .modal__title {
-    @include setFontBold;
-
+    font-family: $fontBold;
     font-size: 25px;
     margin: 0 0 20px;
     text-transform: uppercase;

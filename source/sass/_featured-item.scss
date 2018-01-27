@@ -6,16 +6,14 @@
 .featured-item__title {
     font-size: 25px;
     margin: 0 0 5px;
-
-    @include setFontBold;
+    font-family: $fontBold;
 }
 
 .featured-item__lable {
     font-size: 17px;
     text-transform: uppercase;
     color: #63d1bb;
-
-    @include setFontBold;
+    font-family: $fontBold;
 }
 
 .featured-item__description {
@@ -31,9 +29,7 @@
 
 .featured-item__price {
     font-size: 17px;
-
-    @include setFontBold;
-
+    font-family: $fontBold;
     color: #444444;
     display: block;
     text-align: center;

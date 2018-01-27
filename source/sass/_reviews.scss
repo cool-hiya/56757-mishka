@@ -22,9 +22,7 @@
 
 .reviews__author-name {
     font-size: 17px;
-
-    @include setFontBold;
-
+    font-family: $fontBold;
     font-style: normal;
     display: block;
     margin-bottom: 10px;

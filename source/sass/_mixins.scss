@@ -1,13 +1,3 @@
-//Шрифты
-
-@mixin setFontNormal {
-    font-family: "Open Sans", sans-serif;
-}
-
-@mixin setFontBold {
-    font-family: "Open Sans Bold", sans-serif;
-}
-
 //Рамки
 
 @mixin setBorder($width: 2px, $style: solid, $color: #444444) {

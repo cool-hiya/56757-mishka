@@ -1,8 +1,7 @@
 .control__label {
     display: block;
     font-size: 17px;
-
-    @include setFontBold;
+    font-family: $fontBold;
 }
 
 .control__input {
@@ -19,9 +18,7 @@
 }
 
 .control__textarea {
-    @include setFontBold;
     @include setBorder;
-
     width: 100%;
     height: 140px;
     padding: 15px;
@@ -30,8 +27,7 @@
     font-size: 17px;
     color: #d2d2d2;
     resize: none;
-
-    @include setFontNormal;
+    font-family: $fontNormal;
 }
 
 .order-form__note {

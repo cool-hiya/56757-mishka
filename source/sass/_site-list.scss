@@ -15,8 +15,7 @@
     }
 
     a {
-        @include setFontBold;
-
+        font-family: $fontBold;
         font-size: 17px;
         color: #000000;
         text-decoration: none;
