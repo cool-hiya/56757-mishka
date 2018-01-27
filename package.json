@@ -11,7 +11,7 @@
     "grunt-postcss": "0.9.x",
     "grunt-sass": "2.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "8.4.x",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" —syntax scss",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
