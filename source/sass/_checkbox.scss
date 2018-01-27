@@ -4,7 +4,7 @@
 
 .checkbox__label {
     font-size: 17px;
-    font-family: "Opens Sans Bold";
+    font-family: "Open Sans Bold", sans-serif;
     cursor: pointer;
 }
 
@@ -12,7 +12,7 @@
     display: none;
 }
 
-.checkbox__label:before {
+.checkbox__label::before {
     content: "";
     display: inline-block;
     width: 25px;

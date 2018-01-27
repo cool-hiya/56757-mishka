@@ -1,6 +1,6 @@
 .copyright__text {
     font-size: 19px;
-    font-family: "Opens Sans Bold";
+    font-family: "Open Sans Bold", sans-serif;
     margin-right: 30px;
 }
 
@@ -9,7 +9,7 @@
     display: inline-block;
 }
 
-.copyright__link:before {
+.copyright__link::before {
     content: url("/img/logo-htmlacademy.svg");
     display: inline-block;
     width: 27px;

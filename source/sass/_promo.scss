@@ -6,11 +6,11 @@
 .promo__title {
     margin: 0;
     font-size: 17px;
-    font-family: "Opens Sans Bold";
+    font-family: "Open Sans Bold", sans-serif;
     margin-bottom: 20px;
 }
 
-.promo__title:before {
+.promo__title::before {
     content: url("/img/icon-video.svg");
     display: inline-block;
     width: 32px;
