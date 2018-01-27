@@ -7,3 +7,9 @@
 @mixin setFontBold {
     font-family: "Open Sans Bold", sans-serif;
 }
+
+//Рамки
+
+@mixin setBorder($width: 2px, $style: solid, $color: #444444) {
+    border: $width $style $color;
+}

@@ -1,3 +1,4 @@
+@import "mixins";
 @import "page-header";
 @import "main-nav";
 @import "site-list";
@@ -22,14 +23,12 @@
 @import "catalog";
 @import "item";
 @import "promo";
-@import "video";
 @import "page-form";
 @import "order-form";
 @import "fieldset";
 @import "radio";
 @import "checkbox";
 @import "control";
-@import "mixins";
 
 @font-face {
     font-family: "Open Sans";
