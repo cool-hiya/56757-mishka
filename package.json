@@ -16,7 +16,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
+    "stylelint": "8.4.x",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "grunt sass && grunt postcss",
     "start": "npm run build && grunt serve"
