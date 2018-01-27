@@ -1,0 +1,21 @@
+.checkbox {
+    border: 1px solid black;
+}
+
+.checkbox__label {
+    font-size: 17px;
+    font-family: "Open Sans Bold", sans-serif;
+    cursor: pointer;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__label::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+}

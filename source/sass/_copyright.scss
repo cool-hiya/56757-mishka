@@ -1,0 +1,17 @@
+.copyright__text {
+    font-size: 19px;
+    font-family: "Open Sans Bold", sans-serif;
+    margin-right: 30px;
+}
+
+.copyright__link {
+    font-size: 0;
+    display: inline-block;
+}
+
+.copyright__link::before {
+    content: url("/img/logo-htmlacademy.svg");
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+}

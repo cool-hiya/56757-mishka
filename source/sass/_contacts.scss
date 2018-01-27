@@ -1,0 +1,44 @@
+.contacts {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.contacts__title {
+    margin: 0;
+    font-size: 18px;
+    font-family: "Open Sans Bold", sans-serif;
+    margin-bottom: 25px;
+}
+
+.contacts__list {
+    color: #444444;
+    margin-bottom: 30px;
+}
+
+.contacts__field,
+.contacts__value {
+    vertical-align: top;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.contacts__field {
+    white-space: nowrap;
+    padding-left: 0;
+}
+
+.contacts__value {
+    padding-right: 0;
+}
+
+.contacts__value--email {
+    a {
+        color: #444444;
+        text-decoration: none;
+        border-bottom: 1px solid #62d1ba;
+    }
+}
+
+.contacts__map {
+    margin: 0 -30px 30px;
+}

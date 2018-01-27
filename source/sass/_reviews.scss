@@ -1,0 +1,38 @@
+.reviews {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.reviews__title {
+    margin: 0;
+    border: 1px solid black;
+    margin-bottom: 38px;
+}
+
+.reviews__item {
+    margin: 0;
+
+    p {
+        font-size: 15px;
+        margin: 0 0 40px;
+        line-height: 30px;
+        color: #444444;
+    }
+}
+
+.reviews__author-name {
+    font-size: 17px;
+    font-family: "Open Sans Bold", sans-serif;
+    font-style: normal;
+    display: block;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.reviews__author-nickname {
+    font-size: 17px;
+    font-style: normal;
+    display: block;
+    margin-bottom: 36px;
+    color: #444444;
+}

@@ -1,0 +1,16 @@
+.socials__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.socials__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
