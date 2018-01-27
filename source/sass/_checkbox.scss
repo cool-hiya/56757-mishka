@@ -17,7 +17,8 @@
 .checkbox__label::before {
     content: "";
     display: inline-block;
-    width: 25px;
-    height: 25px;
+
+    @include setSize(25px, 25px);
+
     border: 1px solid black;
 }

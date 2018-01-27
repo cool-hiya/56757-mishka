@@ -17,8 +17,9 @@
 .radio__label::before {
     content: "";
     display: inline-block;
-    width: 30px;
-    height: 30px;
+
+    @include setSize(30px, 30px);
+
     border: 1px solid black;
     border-radius: 50%;
 }

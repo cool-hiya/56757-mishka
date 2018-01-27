@@ -13,3 +13,10 @@
 @mixin setBorder($width: 2px, $style: solid, $color: #444444) {
     border: $width $style $color;
 }
+
+//Размер
+
+@mixin setSize($width, $height) {
+    width: $width;
+    height: $height;
+}

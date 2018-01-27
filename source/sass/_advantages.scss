@@ -29,47 +29,53 @@
 .advantages__item--eco::before {
     content: url("/img/icon-feature-flower.svg");
     display: block;
-    width: 32px;
-    height: 37px;
+
+    @include setSize(32px, 37px);
+
     margin-bottom: 20px;
 }
 
 .advantages__item--style::before {
     content: url("/img/icon-feature-money.svg");
     display: block;
-    width: 47px;
-    height: 27px;
+
+    @include setSize(47px, 27px);
+
     margin-bottom: 28px;
 }
 
 .advantages__item--like::before {
     content: url("/img/icon-feature-heart.svg");
     display: block;
-    width: 34px;
-    height: 27px;
+
+    @include setSize(34px, 27px);
+
     margin-bottom: 23px;
 }
 
 .advantages__item--hand-made::before {
     content: url("/img/icon-feature-ball.svg");
     display: block;
-    width: 35px;
-    height: 34px;
+
+    @include setSize(35px, 34px);
+
     margin-bottom: 20px;
 }
 
 .advantages__item--support::before {
     content: url("/img/icon-feature-rocket.svg");
     display: block;
-    width: 55px;
-    height: 23px;
+
+    @include setSize(55px, 23px);
+
     margin-bottom: 30px;
 }
 
 .advantages__item--gift::before {
     content: url("/img/icon-feature-gift.svg");
     display: block;
-    width: 33px;
-    height: 32px;
+
+    @include setSize(33px, 32px);
+
     margin-bottom: 23px;
 }
