@@ -1,3 +1,5 @@
+@import "mixins";
+@import "variables";
 @import "page-header";
 @import "main-nav";
 @import "site-list";
@@ -22,7 +24,6 @@
 @import "catalog";
 @import "item";
 @import "promo";
-@import "video";
 @import "page-form";
 @import "order-form";
 @import "fieldset";
@@ -45,14 +46,15 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: $fontNormal;
     margin: 0;
 }
 
 .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
+
+    @include setSize(1px, 1px);
+
     margin: -1px;
     border: 0;
     padding: 0;

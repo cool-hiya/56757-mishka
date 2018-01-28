@@ -6,15 +6,15 @@
 .promo__title {
     margin: 0;
     font-size: 17px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-family: $fontBold;
     margin-bottom: 20px;
 }
 
 .promo__title::before {
     content: url("/img/icon-video.svg");
     display: inline-block;
-    width: 32px;
-    height: 37px;
+
+    @include setSize(32px, 37px);
 }
 
 .promo__video {

@@ -1,6 +1,6 @@
 .copyright__text {
     font-size: 19px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-family: $fontBold;
     margin-right: 30px;
 }
 
@@ -12,6 +12,6 @@
 .copyright__link::before {
     content: url("/img/logo-htmlacademy.svg");
     display: inline-block;
-    width: 27px;
-    height: 34px;
+
+    @include setSize(27px, 34px);
 }

@@ -1,7 +1,7 @@
 .control__label {
     display: block;
     font-size: 17px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-family: $fontBold;
 }
 
 .control__input {
@@ -18,16 +18,16 @@
 }
 
 .control__textarea {
+    @include setBorder;
     width: 100%;
     height: 140px;
     padding: 15px;
     box-sizing: border-box;
     outline: none;
-    border: 2px solid #444444;
     font-size: 17px;
     color: #d2d2d2;
     resize: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: $fontNormal;
 }
 
 .order-form__note {

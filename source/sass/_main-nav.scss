@@ -11,8 +11,9 @@
 
     &::after {
         content: url("/img/icon-menu-open.svg");
-        width: 20px;
-        height: 14px;
+
+        @include setSize(20px, 14px);
+
         display: inline-block;
     }
 }

@@ -4,7 +4,7 @@
 
 .radio__label {
     font-size: 17px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-family: $fontBold;
     cursor: pointer;
 }
 
@@ -15,8 +15,9 @@
 .radio__label::before {
     content: "";
     display: inline-block;
-    width: 30px;
-    height: 30px;
+
+    @include setSize(30px, 30px);
+
     border: 1px solid black;
     border-radius: 50%;
 }

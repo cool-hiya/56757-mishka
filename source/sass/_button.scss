@@ -1,6 +1,9 @@
 .button {
+    font-family: $fontBold;
+
+    @include setBorder;
+
     font-size: 17px;
-    font-family: "Open Sans Bold", sans-serif;
     text-transform: uppercase;
     color: #444444;
     cursor: pointer;
@@ -8,7 +11,6 @@
     width: 100%;
     display: inline-block;
     background-color: #ffffff;
-    border: 2px solid #444444;
     padding: 10px 20px;
     text-decoration: none;
     outline: none;
