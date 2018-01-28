@@ -6,8 +6,8 @@
     outline: none;
     cursor: pointer;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 32px;
+    top: 32px;
 
     &::after {
         content: url("/img/icon-menu-open.svg");
@@ -16,4 +16,14 @@
 
         display: inline-block;
     }
+}
+
+@media (min-width: $tablet-width) {
+    .main-nav__toggle::after {
+        display: none;
+    }
+
+    // .main-nav {
+    //     display: flex;
+    // }
 }

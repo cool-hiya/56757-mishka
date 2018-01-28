@@ -1,8 +1,22 @@
 .page-header {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .page-header__logo-link {
-    display: inline-block;
-    margin: 20px 30px;
+    display: flex;
+    height: 79px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+    .page-header {
+        margin: 0 50px;
+    }
+
+    .page-header__logo-link {
+        display: none;
+    }
 }

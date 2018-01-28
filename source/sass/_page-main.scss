@@ -1,5 +1,4 @@
 .page-main {
-    border: 1px solid black;
     background: url("/img/hero-mobile@1x.jpg") no-repeat top center;
 }
 
@@ -7,6 +6,9 @@
     font-family: $fontBold;
     font-size: 27px;
     text-align: center;
-    margin: 75px 30px 153px;
-    border: 1px solid black;
+    margin: 0;
+    padding: 70px 30px;
+    line-height: 30px;
+    height: 283px;
+    box-sizing: border-box;
 }
