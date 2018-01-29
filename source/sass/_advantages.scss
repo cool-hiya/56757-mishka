@@ -112,3 +112,19 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .advantages {
+        padding: 50px 275px 35px;
+    }
+
+    .advantages__title {
+        font-size: 53px;
+    }
+
+    .advantages__wrapper {
+        &:first-child {
+            margin-right: 115px;
+        }
+    }
+}
