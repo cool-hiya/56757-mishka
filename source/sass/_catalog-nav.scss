@@ -53,3 +53,9 @@
         background-position: calc(100% - 33px) center;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .catalog-nav__list {
+        margin: 0 100px;
+    }
+}

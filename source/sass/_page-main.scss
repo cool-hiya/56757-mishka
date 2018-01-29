@@ -27,3 +27,11 @@
         border: 1px solid black;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .page-main__title {
+        font-size: 53px;
+        padding: 153px 255px;
+        line-height: 55px;
+    }
+}
