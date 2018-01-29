@@ -32,3 +32,24 @@
     background-repeat: no-repeat;
     background-position: calc(100% - 27px) center;
 }
+
+@media (min-width: $tablet-width) {
+    .catalog-nav__list {
+        border: 1px solid black;
+        display: flex;
+        margin: 0 50px;
+    }
+
+    .catalog-nav__item {
+        flex-grow: 1;
+        padding: 30px 35px;
+
+        a {
+            line-height: 28px;
+        }
+    }
+
+    .catalog-nav__item--toy {
+        background-position: calc(100% - 33px) center;
+    }
+}
