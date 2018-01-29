@@ -1,13 +1,19 @@
 .contacts {
     border: 1px solid black;
-    padding: 30px;
+    padding: 38px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__contact {
+    display: flex;
 }
 
 .contacts__title {
     margin: 0;
     font-size: 18px;
     font-family: $fontBold;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .contacts__list {
@@ -18,13 +24,15 @@
 .contacts__field,
 .contacts__value {
     vertical-align: top;
-    padding: 10px;
+    padding: 8px 12px;
     line-height: 30px;
+    font-size: 17px;
 }
 
 .contacts__field {
     white-space: nowrap;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .contacts__value {
@@ -41,4 +49,51 @@
 
 .contacts__map {
     margin: 0 -30px 30px;
+}
+
+.contacts__write {
+    display: none;
+}
+
+.contacts__write--undermap {
+    display: block;
+}
+
+@media (min-width: $tablet-width) {
+    .contacts {
+        padding: 40px 45px 50px;
+    }
+
+    .contacts__title {
+        font-size: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &::after {
+            content: url("/img/icon-flag.svg");
+            display: inline-block;
+            width: 47px;
+            height: 82px;
+        }
+    }
+
+    .contacts__list {
+        display: flex;
+    }
+
+    .contacts__contact {
+        &:first-child {
+            margin-right: 65px;
+        }
+    }
+
+    .contacts__map {
+        margin: 0 -45px 50px;
+    }
+
+    .contacts__write--undermap {
+        margin: auto;
+    }
 }

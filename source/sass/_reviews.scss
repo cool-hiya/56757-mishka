@@ -45,6 +45,8 @@
     .reviews {
         background: url("/img/review@1x.jpg") no-repeat top left;
         padding: 70px 45px 50px;
+        min-height: 545px;
+        box-sizing: border-box;
     }
 
     .reviews__title {
@@ -65,7 +67,7 @@
 
     .reviews__write {
         position: absolute;
-        width: auto;
-        right: 45px;
+        right: 50px;
+        top: 75px;
     }
 }
