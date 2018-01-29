@@ -13,7 +13,8 @@
 
 @media (min-width: $tablet-width) {
     .page-header {
-        margin: 0 50px;
+        margin: 0 auto;
+        width: 670px;
     }
 
     .page-header__logo-link {
