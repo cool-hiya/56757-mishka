@@ -47,8 +47,9 @@
 
 body {
     font-family: $fontNormal;
-    margin: 0;
+    margin: 0 auto;
     min-width: 320px;
+    max-width: 1250px;
 }
 
 .visually-hidden {
