@@ -1,6 +1,7 @@
 .featured-item {
     border: 1px solid black;
     padding: 28px 30px 45px;
+    position: relative;
 }
 
 .featured-item__title {
@@ -97,3 +98,36 @@
     }
 }
 
+@media (min-width: $desktop-width) {
+    .featured-item {
+        padding: 70px 100px 95px;
+    }
+
+    .featured-item__title {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 53px;
+        position: absolute;
+        top: 115px;
+        width: auto;
+    }
+
+    .featured-item__img--big {
+        height: 637px;
+    }
+
+    .featured-item__lable {
+        margin: 0 18px;
+        line-height: 19px;
+    }
+
+    .featured-item__wrapper {
+        width: calc(50% - 60px - 175px);
+        margin: 160px 60px 0 175px;
+    }
+
+    .featured-item__description {
+        margin-bottom: 55px;
+    }
+}
