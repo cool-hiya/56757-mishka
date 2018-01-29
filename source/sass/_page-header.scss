@@ -21,3 +21,9 @@
         display: none;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .page-header {
+        width: 1050px;
+    }
+}

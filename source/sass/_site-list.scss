@@ -34,7 +34,9 @@
 }
 
 .site-list__item--logo,
-.site-list__item--free-del {
+.site-list__item--free-del,
+.site-list__item--new,
+.site-list__item--sale {
     display: none;
 }
 
@@ -118,5 +120,30 @@
         display: flex;
         margin-left: auto;
         margin-right: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .site-list__item {
+        &:not(.site-list__item--new):not(.site-list__item--sale) a {
+            font-size: 17px;
+        }
+    }
+
+    .site-list__item--order,
+    .site-list__item--catalog {
+        order: -3;
+        height: 90px;
+        margin-right: 68px;
+    }
+
+    .site-list__item--order {
+        margin-right: 95px;
+    }
+
+    .site-list__item--new,
+    .site-list__item--sale {
+        display: flex;
+        margin-right: 68px;
     }
 }
