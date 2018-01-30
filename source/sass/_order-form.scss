@@ -12,3 +12,27 @@
     line-height: 25px;
     margin-bottom: 20px;
 }
+
+.order-form__note {
+    font-size: 14px;
+    display: block;
+    color: #444444;
+    margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+    .order-form {
+        padding: 80px 50px;
+    }
+
+    .order-form__note {
+        margin-bottom: 0;
+    }
+
+    .order-form__footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

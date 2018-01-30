@@ -6,6 +6,8 @@
     font-size: 17px;
     font-family: $fontBold;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .radio__input {
