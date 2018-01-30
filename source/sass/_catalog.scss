@@ -4,8 +4,23 @@
 }
 
 .catalog__list {
-    border: 1px solid black;
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+    .catalog {
+        padding: 80px 50px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .catalog__list {
+        display: flex;
+    }
+
+    .catalog {
+        padding: 135px 95px;
+    }
 }
