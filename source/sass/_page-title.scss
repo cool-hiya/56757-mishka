@@ -6,3 +6,18 @@
     background-color: #f1f1f1;
     padding: 60px;
 }
+
+@media (min-width: $tablet-width) {
+    .page-title {
+        margin-top: -60px;
+        font-size: 43px;
+        padding: 93px 50px 75px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .page-title {
+        font-size: 53px;
+        padding: 88px 50px 90px;
+    }
+}
