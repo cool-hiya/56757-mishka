@@ -1,6 +1,9 @@
 .promo {
+    margin: 30px;
+    padding: 25px 31px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
-    padding: 30px;
 }
 
 .promo__title {
@@ -8,17 +11,26 @@
     font-size: 17px;
     font-family: $fontBold;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.promo__title--inside {
+    display: none;
 }
 
 .promo__title::before {
     content: url("/img/icon-video.svg");
     display: inline-block;
+    margin-right: 20px;
 
     @include setSize(32px, 37px);
 }
 
 .promo__video {
-    margin-bottom: 20px;
+    margin: 0 -31px 25px;
+    width: calc(100% + 62px);
+    border: 1px solid black;
 }
 
 .promo__description {
@@ -26,5 +38,62 @@
     margin: 0;
     color: #444444;
     line-height: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+    .promo {
+        margin: 50px;
+    }
+
+    .promo__title--top {
+        display: none;
+    }
+
+    .promo__title--inside {
+        display: flex;
+        font-size: 20px;
+    }
+
+    .promo__video {
+        margin-top: -25px;
+    }
+
+    .promo__description {
+        font-size: 15px;
+    }
+
+    .promo__order {
+        width: 100%;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .promo {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .promo__video {
+        margin: 0;
+        width: 753px;
+        height: 455px;
+        flex-shrink: 0;
+    }
+
+    .promo__title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .promo__info-wrapper {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promo__order {
+        width: auto;
+        margin-top: auto;
+    }
 }
