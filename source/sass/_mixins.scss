@@ -10,3 +10,10 @@
     width: $width;
     height: $height;
 }
+
+@mixin setContentMaxWidth {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1250px;
+    margin: auto;
+}

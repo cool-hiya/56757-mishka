@@ -3,6 +3,8 @@
     padding: 38px 30px;
     display: flex;
     flex-direction: column;
+
+    @include setContentMaxWidth;
 }
 
 .contacts__contact {

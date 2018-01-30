@@ -2,6 +2,8 @@
     border: 1px solid black;
     padding: 28px 30px 45px;
     position: relative;
+
+    @include setContentMaxWidth;
 }
 
 .featured-item__title {

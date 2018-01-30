@@ -1,6 +1,8 @@
 .order-form {
     padding: 30px;
     border: 1px solid black;
+
+    @include setContentMaxWidth;
 }
 
 .order-form__intro {
