@@ -71,3 +71,26 @@
         top: 75px;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .reviews {
+        padding: 63px 184px 50px 270px;
+    }
+
+    .reviews__title {
+        font-size: 53px;
+        margin-bottom: 40px;
+    }
+
+    .reviews__item p {
+        margin-bottom: 40px;
+    }
+
+    .reviews__write {
+        right: 100px;
+    }
+
+    .reviews__toggles {
+        right: 95px;
+    }
+}
