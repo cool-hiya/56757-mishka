@@ -15,22 +15,34 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a>Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--logo">
+          <a class="site-list__logo-link" href="index.html">
+            <img class="site-list__logo-image" src="img/logo-tablet.png" width="113" height="46" alt="Мишка" />
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--catalog">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item site-list__item--order">
+          <a>Вязание на заказ</a>
+        </li>
+        <li class="site-list__item site-list__item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item site-list__item--cart">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+        <li class="site-list__item site-list__item--new">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item site-list__item--sale">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item site-list__item--free-del">
+          <span>Бесплатная доставка по России</span>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="page-form">
@@ -119,6 +131,11 @@
     </form>
   </main>
   <footer class="page-footer">
+    <div class="page-footer__logo-wrapper">
+      <a class="page-footer__logo-link">
+        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Мишка" />
+      </a>
+    </div>
     <div class="page-footer__social socials">
       <b class="socials__title visually-hidden">Давайте дружить!</b>
       <ul class="socials__list">
