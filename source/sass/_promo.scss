@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+
+    @include setContentMaxWidth;
 }
 
 .promo__title {
@@ -28,9 +30,10 @@
 }
 
 .promo__video {
-    margin: 0 -31px 25px;
-    width: calc(100% + 62px);
+    margin: 0 0 25px;
     border: 1px solid black;
+    width: 300px;
+    height: 200px;
 }
 
 .promo__description {
@@ -43,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
     .promo {
-        margin: 50px;
+        padding: 50px;
     }
 
     .promo__title--top {
@@ -56,7 +59,7 @@
     }
 
     .promo__video {
-        margin-top: -25px;
+        margin: -25px 0 0;
     }
 
     .promo__description {
