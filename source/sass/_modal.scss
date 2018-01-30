@@ -1,6 +1,10 @@
 .modal {
     border: 1px solid black;
     padding: 35px 30px 45px;
+    width: 100%;
+    max-width: 570px;
+    position: absolute;
+    background-color: #ffffff;
 }
 
 .modal__title {
