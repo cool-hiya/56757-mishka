@@ -1,14 +1,15 @@
 .page-header {
-    display: flex;
-    flex-direction: column;
     position: relative;
 }
 
 .page-header__logo-wrapper {
-    display: flex;
-    height: 79px;
-    align-items: center;
-    justify-content: center;
+    height: 78px;
+    text-align: center;
+}
+
+.page-header__logo-link {
+    display: inline-block;
+    margin: 19px 0;
 }
 
 @media (min-width: $tablet-width) {
