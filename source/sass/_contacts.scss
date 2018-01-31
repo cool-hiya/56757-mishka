@@ -1,14 +1,12 @@
 .contacts {
     border: 1px solid black;
+    box-sizing: border-box;
     padding: 38px 30px;
+    width: $mobile-width;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-
-    @include setContentMaxWidth;
-}
-
-.contacts__contact {
-    display: flex;
+    position: relative;
 }
 
 .contacts__title {
@@ -28,7 +26,7 @@
     vertical-align: top;
     padding: 8px 12px;
     line-height: 30px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .contacts__field {
@@ -53,17 +51,10 @@
     margin: 0 -30px 30px;
 }
 
-.contacts__write {
-    display: none;
-}
-
-.contacts__write--undermap {
-    display: block;
-}
-
 @media (min-width: $tablet-width) {
     .contacts {
-        padding: 40px 45px 50px;
+        width: $tablet-width;
+        padding: 40px 50px 50px;
     }
 
     .contacts__title {
@@ -82,44 +73,43 @@
     }
 
     .contacts__list {
-        display: flex;
-    }
+        width: 100%;
 
-    .contacts__contact {
-        &:first-child {
-            margin-right: 65px;
+        tbody {
+            display: flex;
         }
     }
 
-    .contacts__map {
-        margin: 0 -45px 50px;
+    .contacts__contact {
+        width: 50%;
     }
 
-    .contacts__write--undermap {
+    .contacts__map {
+        margin: 0 -50px 50px;
+    }
+
+    .contacts__write {
         margin: auto;
     }
 }
 
 @media (min-width: $desktop-width) {
     .contacts {
-        flex-direction: row;
-        padding: 73px 98px 96px 161px;
-    }
-
-    .contacts__write {
-        display: inline-block;
-        align-self: flex-start;
-        margin-top: auto;
-    }
-
-    .contacts__write--undermap {
-        display: none;
+        width: $desktop-width;
+        padding: 90px 50px 161px 115px;
     }
 
     .contacts__list {
-        flex-direction: column;
-        margin: 0 0 0 113px;
-        flex-grow: 1;
+        margin-left: 112px;
+
+        tbody {
+            flex-direction: column;
+        }
+    }
+
+    .contacts__write {
+        margin: auto 0 0 112px;
+        align-self: flex-start;
     }
 
     .contacts__title {
@@ -133,15 +123,10 @@
     }
 
     .contacts__map {
+        order: -1;
+        position: absolute;
+        right: 50px;
         margin: 0;
-        flex-grow: 1;
         width: 525px;
-        flex-shrink: 0;
-    }
-
-    .contacts__wrapper {
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
     }
 }
