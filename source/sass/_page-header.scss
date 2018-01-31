@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.page-header__logo-link {
+.page-header__logo-wrapper {
     display: flex;
     height: 79px;
     align-items: center;
@@ -17,7 +17,7 @@
         width: 670px;
     }
 
-    .page-header__logo-link {
+    .page-header__logo-wrapper {
         display: none;
     }
 }
