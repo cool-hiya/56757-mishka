@@ -1,8 +1,9 @@
 .advantages {
-    border: 1px solid black;
+    width: $mobile-width;
+    margin: 0 auto;
     padding: 25px 30px;
-
-    @include setContentMaxWidth;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 .advantages__title {
@@ -18,6 +19,7 @@
 .advantages__wrapper {
     margin: 0;
     padding: 0;
+    border: 1px solid black;
 }
 
 .advantages__item {
@@ -26,65 +28,44 @@
     font-family: $fontBold;
     margin-top: 29px;
     line-height: 20px;
+    border: 1px solid black;
+}
+
+.advantages__item::before {
+    content: "";
+    display: block;
+
+    @include setSize(50px, 50px);
 }
 
 .advantages__item--eco::before {
     content: url("/img/icon-feature-flower.svg");
-    display: block;
-
-    @include setSize(32px, 37px);
-
-    margin-bottom: 20px;
 }
 
 .advantages__item--style::before {
     content: url("/img/icon-feature-money.svg");
-    display: block;
-
-    @include setSize(47px, 27px);
-
-    margin-bottom: 28px;
 }
 
 .advantages__item--like::before {
     content: url("/img/icon-feature-heart.svg");
-    display: block;
-
-    @include setSize(34px, 27px);
-
-    margin-bottom: 23px;
 }
 
 .advantages__item--hand-made::before {
     content: url("/img/icon-feature-ball.svg");
-    display: block;
-
-    @include setSize(35px, 34px);
-
-    margin-bottom: 20px;
 }
 
 .advantages__item--support::before {
     content: url("/img/icon-feature-rocket.svg");
-    display: block;
-
-    @include setSize(55px, 23px);
-
-    margin-bottom: 30px;
 }
 
 .advantages__item--gift::before {
     content: url("/img/icon-feature-gift.svg");
-    display: block;
-
-    @include setSize(33px, 32px);
-
-    margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
     .advantages {
         padding: 43px 50px 35px;
+        width: $tablet-width;
     }
 
     .advantages__title {
@@ -94,7 +75,6 @@
 
     .advantages__list {
         display: flex;
-        flex-wrap: wrap;
     }
 
     .advantages__item {
@@ -104,29 +84,17 @@
     }
 
     .advantages__wrapper {
-        &:first-child {
-            width: 234px;
-            margin-right: 100px;
-        }
-
-        &:last-child {
-            width: 293px;
-        }
+        width: 50%;
     }
 }
 
 @media (min-width: $desktop-width) {
     .advantages {
-        padding: 50px 275px 35px;
+        width: $desktop-width;
+        padding: 50px 225px 35px;
     }
 
     .advantages__title {
         font-size: 53px;
-    }
-
-    .advantages__wrapper {
-        &:first-child {
-            margin-right: 115px;
-        }
     }
 }
