@@ -1,37 +1,58 @@
 .page-main {
-    background: url("/img/hero-mobile@1x.jpg") no-repeat top center;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.page-main__title-wrapper {
+    width: $mobile-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 285px;
 }
 
 .page-main__title {
     font-family: $fontBold;
     font-size: 27px;
+    margin: 80px auto 0;
     text-align: center;
-    margin: 0;
-    padding: 70px 30px;
-    line-height: 30px;
-    height: 283px;
     box-sizing: border-box;
+    border: 1px solid black;
+    width: 260px;
+    line-height: 30px;
 }
 
 @media (min-width: $tablet-width) {
     .page-main {
         border-top: 1px solid #ececec;
-        margin-top: -65px;
+        margin: -65px auto 0;
+    }
+
+    .page-main__title-wrapper {
+        width: $tablet-width;
+        height: 750px;
     }
 
     .page-main__title {
-        height: 624px;
         font-size: 43px;
-        padding: 153px 60px;
+        width: 550px;
         line-height: 48px;
-        border: 1px solid black;
+        margin-top: 155px;
     }
 }
 
 @media (min-width: $desktop-width) {
+    .page-main {
+        border-top: 1px solid #ececec;
+    }
+
+    .page-main__title-wrapper {
+        width: $desktop-width;
+    }
+
     .page-main__title {
         font-size: 53px;
-        padding: 153px 255px;
         line-height: 55px;
+        width: 700px;
     }
 }
