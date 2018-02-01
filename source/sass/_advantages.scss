@@ -12,8 +12,7 @@
 }
 
 .advantages__list {
-    margin: 0;
-    padding: 0;
+    @include resetList;
 }
 
 .advantages__wrapper {
@@ -23,7 +22,6 @@
 }
 
 .advantages__item {
-    list-style-type: none;
     font-size: 17px;
     font-family: $fontBold;
     margin-top: 29px;

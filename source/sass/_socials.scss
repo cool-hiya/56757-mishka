@@ -1,7 +1,6 @@
 .socials__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    @include resetList;
+
     padding-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
     display: flex;

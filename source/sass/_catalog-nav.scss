@@ -6,13 +6,10 @@
 }
 
 .catalog-nav__list {
-    padding: 0;
-    margin: 0;
+    @include resetList;
 }
 
 .catalog-nav__item {
-    list-style-type: none;
-
     a {
         text-decoration: none;
         color: #ffffff;

@@ -1,8 +1,6 @@
 .button {
     font-family: $fontBold;
-
-    @include setBorder;
-
+    border: 2px solid #444444;
     font-size: 17px;
     text-transform: uppercase;
     color: #444444;
