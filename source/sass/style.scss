@@ -1,7 +1,22 @@
+//Миксины
 @import "mixins";
+
+//Переменные
 @import "variables";
+
+//Глобальные стили
+
+@import "_globals";
+
+//Блоки
 @import "button";
 @import "table";
+@import "fieldset";
+@import "radio";
+@import "checkbox";
+@import "control";
+@import "slider";
+@import "map";
 @import "page-header";
 @import "main-nav";
 @import "site-list";
@@ -10,9 +25,7 @@
 @import "featured-item";
 @import "advantages";
 @import "reviews";
-@import "slider";
 @import "contacts";
-@import "map";
 @import "page-footer";
 @import "socials";
 @import "social";
@@ -26,42 +39,3 @@
 @import "promo";
 @import "page-form";
 @import "order-form";
-@import "fieldset";
-@import "radio";
-@import "checkbox";
-@import "control";
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("/fonts/opensans.woff") format("woff"), url("/fonts/opensans.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Open Sans Bold";
-    src: url("/fonts/opensansbold.woff") format("woff"), url("/fonts/opensansbold.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-family: $fontNormal;
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
-}
-
-.visually-hidden {
-    position: absolute;
-
-    @include setSize(1px, 1px);
-
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
