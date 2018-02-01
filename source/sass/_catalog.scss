@@ -1,8 +1,9 @@
 .catalog {
     border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0 auto;
     padding: 30px;
-
-    @include setContentMaxWidth;
+    width: $mobile-width;
 }
 
 .catalog__list {
@@ -13,6 +14,7 @@
 
 @media (min-width: $tablet-width) {
     .catalog {
+        width: $tablet-width;
         padding: 80px 50px;
     }
 }
@@ -23,6 +25,6 @@
     }
 
     .catalog {
-        padding: 100px 50px;
+        width: $desktop-width;
     }
 }

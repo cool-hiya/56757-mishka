@@ -1,11 +1,15 @@
 .promo {
-    margin: 30px;
-    padding: 25px 31px;
-    display: flex;
-    flex-direction: column;
+    padding: 25px 30px;
     border: 1px solid black;
+    box-sizing: border-box;
+    width: $mobile-width;
+    margin: 0 auto;
+}
 
-    @include setContentMaxWidth;
+.promo__wrapper {
+    border: 1px solid blue;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .promo__title {
@@ -15,10 +19,6 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-}
-
-.promo__title--inside {
-    display: none;
 }
 
 .promo__title::before {
@@ -32,8 +32,9 @@
 .promo__video {
     margin: 0 0 25px;
     border: 1px solid black;
-    width: 300px;
-    height: 200px;
+    box-sizing: border-box;
+    width: 260px;
+    height: 155px;
 }
 
 .promo__description {
@@ -47,23 +48,22 @@
 @media (min-width: $tablet-width) {
     .promo {
         padding: 50px;
+        width: $tablet-width;
     }
 
-    .promo__title--top {
-        display: none;
-    }
-
-    .promo__title--inside {
+    .promo__wrapper {
         display: flex;
-        font-size: 20px;
-    }
-
-    .promo__video {
-        margin: -25px 0 0;
+        flex-wrap: wrap;
     }
 
     .promo__description {
         font-size: 15px;
+    }
+
+    .promo__video {
+        order: -1;
+        width: 100%;
+        height: 460px;
     }
 
     .promo__order {
@@ -73,30 +73,34 @@
 
 @media (min-width: $desktop-width) {
     .promo {
-        flex-direction: row;
-        padding: 0;
+        padding: 50px;
+        width: $desktop-width;
     }
 
     .promo__video {
         margin: 0;
-        width: 753px;
-        height: 455px;
-        flex-shrink: 0;
+        width: 675px;
+        height: 450px;
+    }
+
+    .promo__wrapper {
+        justify-content: space-between;
     }
 
     .promo__title {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .promo__info-wrapper {
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
+        position: absolute;
+        right: 200px;
+        width: 150px;
     }
 
     .promo__order {
         width: auto;
-        margin-top: auto;
+    }
+
+    .promo__info-wrapper {
+        width: 350px;
+        margin-top: 120px;
     }
 }
