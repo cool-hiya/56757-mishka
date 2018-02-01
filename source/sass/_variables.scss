@@ -1,22 +1,7 @@
 $fontNormal: "Open Sans", sans-serif;
 $fontBold: "Open Sans Bold", sans-serif;
 
+//Breakpoints
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
-
-// body {
-//     background: url("/img/mishka-index-mobile.jpg") no-repeat 50% 0;
-// }
-
-// @media (min-width: $tablet-width) {
-//     body {
-//         background: url("/img/mishka-index-tablet.jpg") no-repeat 50% 0;
-//     }
-// }
-
-// @media (min-width: $desktop-width) {
-//     body {
-//         background: url("/img/mishka-index-desktop.jpg") no-repeat 50% 0;
-//     }
-// }
