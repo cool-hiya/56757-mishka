@@ -26,7 +26,7 @@
 .item__title {
     color: #000000;
     font-size: 17px;
-    font-family: $fontBold;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -47,8 +47,7 @@
 
 .item__price {
     font-size: 15px;
-    font-family: $fontBold;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .item__order {

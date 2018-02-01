@@ -1,7 +1,7 @@
 .control__label {
     display: block;
     font-size: 17px;
-    font-family: $fontBold;
+    font-weight: bold;
 }
 
 .control__input {
@@ -27,5 +27,5 @@
     font-size: 17px;
     color: #d2d2d2;
     resize: none;
-    font-family: $fontNormal;
+    font-family: inherit;
 }
