@@ -1,20 +1,15 @@
 .featured-item {
-    width: $mobile-width;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding: 28px 30px 45px;
     position: relative;
+    box-sizing: border-box;
+    padding: 9.3% 9.3% 14%;
 }
 
 .featured-item__title {
-    font-size: 25px;
     margin: 0;
+    font-size: 25px;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
-    font-weight: bold;
-    box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .featured-item__lable {
@@ -22,8 +17,11 @@
     text-transform: uppercase;
     color: #63d1bb;
     font-weight: bold;
-    box-sizing: border-box;
-    border: 1px solid black;
+}
+
+.featured-item__info-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .featured-item__description {
@@ -31,36 +29,33 @@
     line-height: 25px;
     font-size: 15px;
     color: #444444;
-    box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .featured-item__img {
+    align-self: center;
     margin-bottom: 20px;
-    box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .featured-item__price {
     font-size: 17px;
     font-weight: bold;
     color: #444444;
-    display: block;
-    text-align: center;
+    align-self: center;
     margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
     .featured-item {
-        width: $tablet-width;
         padding: 40px 50px 70px;
     }
 
-    .featured-item__wrapper {
-        width: 290px;
-        display: flex;
-        flex-direction: column;
-        height: 400px;
+    .featured-item__info-wrapper {
+        position: relative;
+        margin: 0 auto;
+        width: 668px;
+        padding-right: 385px;
+        box-sizing: border-box;
+        min-height: 400px;
     }
 
     .featured-item__title {
@@ -74,8 +69,8 @@
 
     .featured-item__img {
         position: absolute;
-        order: -1;
-        right: 50px;
+        top: 0;
+        right: 0;
         width: 335px;
         height: 400px;
     }
@@ -89,7 +84,6 @@
         font-size: 17px;
         margin: 0 0 37px;
         line-height: 29px;
-        width: 290px;
     }
 
     .featured-item__price {
@@ -97,15 +91,12 @@
         font-size: 20px;
         margin-bottom: 30px;
     }
-
-    .featured-item__order {
-        width: 100%;
-    }
 }
 
 @media (min-width: $desktop-width) {
     .featured-item {
         width: $desktop-width;
+        margin: 0 auto;
         padding: 70px 50px 95px;
     }
 
