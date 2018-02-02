@@ -9,6 +9,7 @@
     box-sizing: border-box;
     border: 1px solid black;
     height: 285px;
+    padding: 0 30px;
 }
 
 .page-main__title {
@@ -18,7 +19,6 @@
     text-align: center;
     box-sizing: border-box;
     border: 1px solid black;
-    width: 260px;
     line-height: 30px;
 }
 
@@ -30,11 +30,11 @@
     .page-main__title-wrapper {
         width: $tablet-width;
         height: 750px;
+        padding: 0 50px;
     }
 
     .page-main__title {
         font-size: 43px;
-        width: 550px;
         line-height: 48px;
         margin-top: 155px;
     }
@@ -47,11 +47,11 @@
 
     .page-main__title-wrapper {
         width: $desktop-width;
+        padding: 0 50px;
     }
 
     .page-main__title {
         font-size: 53px;
         line-height: 55px;
-        width: 700px;
     }
 }
