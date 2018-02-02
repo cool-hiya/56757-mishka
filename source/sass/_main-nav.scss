@@ -29,7 +29,7 @@
 
 @media (min-width: $desktop-width) {
     .main-nav {
-        width: #{$desktop-width - $large-offset * 2};
+        width: $desktop-width;
         margin: 0 auto;
     }
 }
