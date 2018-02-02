@@ -75,22 +75,22 @@
         line-height: 22px;
         width: 50%;
         order: 2;
-    }
 
-    .advantages__item--eco {
-        order: 0;
-    }
+        &--eco {
+            order: 0;
+        }
 
-    .advantages__item--hand-made {
-        order: 1;
-    }
+        &--hand-made {
+            order: 1;
+        }
 
-    .advantages__item--like {
-        order: 5;
-    }
+        &--like {
+            order: 5;
+        }
 
-    .advantages__item--gift {
-        order: 6;
+        &--gift {
+            order: 6;
+        }
     }
 }
 
