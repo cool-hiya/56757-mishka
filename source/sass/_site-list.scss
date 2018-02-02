@@ -4,7 +4,7 @@
 
 .site-list__item {
     display: flex;
-    height: 78px;
+    height: 79px;
     box-sizing: border-box;
     border-bottom: 1px solid #ececec;
 
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    padding: 0 30px;
+    padding: 0 9.3%;
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
@@ -46,9 +46,17 @@
 
     &::before {
         content: "";
-        margin-right: 30px;
+        margin-right: 9.3%;
 
         @include setSize(20px, 20px);
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 
     &--logo {
@@ -78,7 +86,7 @@
 
     .site-list__item {
         border: none;
-        height: 85px;
+        height: 90px;
 
         &--search,
         &--cart {
@@ -87,22 +95,20 @@
             .site-list__link::before {
                 display: flex;
                 margin-right: 0;
-                padding: 0 27px;
+                padding: 0 32px;
             }
         }
 
         &--logo {
             order: -2;
-            width: calc(100% - 350px);
+            width: calc(100% - 355px);
             justify-content: flex-start;
-            border: 1px solid black;
-            box-sizing: border-box;
         }
 
         &--search {
             margin-left: auto;
-            border: 1px solid black;
-            box-sizing: border-box;
+            border-right: 1px solid #ececec;
+            border-left: 1px solid #ececec;
 
             .site-list__link {
                 font-size: 0;
@@ -116,37 +122,32 @@
 
             .site-list__link {
                 font-size: 15px;
-                border: 1px solid black;
-                box-sizing: border-box;
             }
         }
 
         &--free-del {
             display: flex;
             margin-left: auto;
+            pointer-events: none;
+
+            .site-list__link {
+                font-weight: normal;
+            }
         }
 
         &--catalog {
-            margin-right: 30px;
+            margin-right: 35px;
         }
     }
-
-    //Временно
-    .site-list__item--cart {
-        width: 265px;
-        border: 1px solid black;
-        box-sizing: border-box;
-    } //
 }
 
 @media (min-width: $desktop-width) {
     .site-list__item {
-        height: 90px;
-
         &--order,
         &--catalog {
             order: -3;
             margin-right: 68px;
+            height: 90px;
 
             .site-list__link {
                 font-size: 17px;
@@ -161,8 +162,6 @@
 
             .site-list__link {
                 font-size: 15px;
-                border: 1px solid black;
-                box-sizing: border-box;
             }
         }
 
