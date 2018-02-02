@@ -1,12 +1,11 @@
 .size {
-    padding: 0;
-    list-style-type: none;
+    @include resetList;
 }
 
 .size__item {
     display: inline-block;
     font-size: 17px;
-    font-family: $fontBold;
+    font-weight: bold;
     text-transform: uppercase;
     color: #444444;
     width: 80px;
@@ -15,8 +14,8 @@
     line-height: 50px;
     cursor: pointer;
 
-    &:not(:last-child) {
-        margin-right: 7px;
+    & + & {
+        margin-left: 7px;
     }
 }
 

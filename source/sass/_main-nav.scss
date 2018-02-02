@@ -1,3 +1,7 @@
+.main-nav {
+    position: relative;
+}
+
 .main-nav__toggle {
     font-size: 0;
     padding: 0;
@@ -6,14 +10,26 @@
     outline: none;
     cursor: pointer;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: $small-offset;
+    top: 32px;
 
     &::after {
         content: url("/img/icon-menu-open.svg");
+        display: inline-block;
 
         @include setSize(20px, 14px);
+    }
+}
 
-        display: inline-block;
+@media (min-width: $tablet-width) {
+    .main-nav__toggle::after {
+        display: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-nav {
+        width: $desktop-width;
+        margin: 0 auto;
     }
 }

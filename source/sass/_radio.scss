@@ -4,8 +4,10 @@
 
 .radio__label {
     font-size: 17px;
-    font-family: $fontBold;
+    font-weight: bold;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .radio__input {

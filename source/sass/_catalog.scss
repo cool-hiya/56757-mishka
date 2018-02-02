@@ -1,11 +1,28 @@
 .catalog {
     border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0 auto;
     padding: 30px;
+    width: $mobile-width;
 }
 
 .catalog__list {
-    border: 1px solid black;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    @include resetList;
+}
+
+@media (min-width: $tablet-width) {
+    .catalog {
+        width: $tablet-width;
+        padding: 80px 50px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .catalog__list {
+        display: flex;
+    }
+
+    .catalog {
+        width: $desktop-width;
+    }
 }

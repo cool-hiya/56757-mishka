@@ -1,6 +1,12 @@
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .copyright__text {
     font-size: 19px;
-    font-family: $fontBold;
+    font-weight: bold;
     margin-right: 30px;
 }
 

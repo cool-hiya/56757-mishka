@@ -1,10 +1,15 @@
 .modal {
     border: 1px solid black;
     padding: 35px 30px 45px;
+    width: 100%;
+    max-width: 570px;
+    position: absolute;
+    background-color: #ffffff;
+    box-sizing: border-box;
 }
 
 .modal__title {
-    font-family: $fontBold;
+    font-weight: bold;
     font-size: 25px;
     margin: 0 0 20px;
     text-transform: uppercase;

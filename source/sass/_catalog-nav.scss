@@ -1,23 +1,24 @@
 .catalog-nav {
-    border: 1px solid black;
+    width: $mobile-width;
+    margin: 0 auto;
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
 
 .catalog-nav__list {
-    padding: 0;
-    margin: 0;
+    @include resetList;
 }
 
 .catalog-nav__item {
-    list-style-type: none;
-    padding: 30px;
-
     a {
         text-decoration: none;
         color: #ffffff;
         font-size: 19px;
-        font-family: $fontBold;
-        display: inline-block;
-        max-width: 150px;
+        line-height: 24px;
+        font-weight: bold;
+        display: block;
+        padding: 27px 30px;
+        box-sizing: border-box;
     }
 }
 
@@ -25,7 +26,7 @@
     background-color: #63d1bb;
     background-image: url("/img/icon-interior.svg");
     background-repeat: no-repeat;
-    background-position: calc(100% - 30px) center;
+    background-position: calc(100% - 35px) center;
 }
 
 .catalog-nav__item--toy {
@@ -33,5 +34,35 @@
     fill: #35a999;
     background-color: #56c3b2;
     background-repeat: no-repeat;
-    background-position: calc(100% - 20px) center;
+    background-position: calc(100% - 27px) center;
+}
+
+@media (min-width: $tablet-width) {
+    .catalog-nav {
+        width: $tablet-width;
+    }
+
+    .catalog-nav__list {
+        display: flex;
+        padding: 0 50px;
+    }
+
+    .catalog-nav__item {
+        flex-grow: 1;
+
+        a {
+            line-height: 28px;
+            padding: 30px 35px;
+        }
+    }
+
+    .catalog-nav__item--toy {
+        background-position: calc(100% - 33px) center;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .catalog-nav {
+        width: $desktop-width;
+    }
 }
