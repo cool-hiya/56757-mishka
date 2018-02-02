@@ -4,7 +4,7 @@
     background-color: #f1f1f1;
 }
 
-.footer-wrapper {
+.footer__wrapper {
     width: $mobile-width;
     margin: 0 auto;
     padding: 23px 30px;
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $tablet-width) {
-    .footer-wrapper {
+    .footer__wrapper {
         width: $tablet-width;
         display: flex;
         justify-content: space-between;
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: $desktop-width) {
-    .footer-wrapper {
+    .footer__wrapper {
         width: $desktop-width;
     }
 }

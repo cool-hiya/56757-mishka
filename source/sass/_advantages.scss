@@ -15,20 +15,11 @@
     @include resetList;
 }
 
-.advantages__wrapper {
-    border: 1px solid black;
-
-    ul {
-        @include resetList;
-    }
-}
-
 .advantages__item {
     font-size: 17px;
     font-weight: bold;
     margin-top: 29px;
     line-height: 20px;
-    border: 1px solid black;
 }
 
 .advantages__item::before {
@@ -75,16 +66,31 @@
 
     .advantages__list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .advantages__item {
         font-size: 20px;
         margin: 0 0 55px;
         line-height: 22px;
+        width: 50%;
+        order: 2;
     }
 
-    .advantages__wrapper {
-        width: 50%;
+    .advantages__item--eco {
+        order: 0;
+    }
+
+    .advantages__item--hand-made {
+        order: 1;
+    }
+
+    .advantages__item--like {
+        order: 5;
+    }
+
+    .advantages__item--gift {
+        order: 6;
     }
 }
 
