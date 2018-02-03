@@ -2,7 +2,6 @@
     padding: 26px 30px 50px;
     position: relative;
     border: 1px solid black;
-    box-sizing: border-box;
     width: $mobile-width;
     margin: 0 auto;
 }
@@ -11,13 +10,11 @@
     margin: 0;
     margin-bottom: 21px;
     border: 1px solid black;
-    box-sizing: border-box;
 }
 
 .reviews__item {
     margin: 0;
     border: 1px solid black;
-    box-sizing: border-box;
 
     p {
         font-size: 15px;
@@ -46,7 +43,6 @@
 .reviews__toggles {
     margin-bottom: 38px;
     border: 1px solid black;
-    box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,7 +51,6 @@
         background: url("/img/review@1x.jpg") no-repeat top left;
         padding: 70px 50px 50px;
         min-height: 545px;
-        box-sizing: border-box;
     }
 
     .reviews__title {

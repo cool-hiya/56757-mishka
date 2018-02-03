@@ -1,6 +1,5 @@
 .order-form {
     border: 1px solid black;
-    box-sizing: border-box;
 }
 
 .order-form__intro {
@@ -20,7 +19,6 @@
 
 .order-form__center-wrapper {
     border: 1px solid yellow;
-    box-sizing: border-box;
     padding: 0 calc((100% - #{$mobile-width}) / 2);
 }
 
