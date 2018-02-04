@@ -68,7 +68,7 @@
     }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
     .site-list__item {
         &--open {
             display: flex;
