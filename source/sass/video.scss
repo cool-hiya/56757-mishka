@@ -1,0 +1,38 @@
+.video {
+    position: relative;
+    border: 1px solid #ececee;
+    box-sizing: content-box;
+}
+
+.video__poster {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: none;
+    background: url("/img/video-mobile@1x.jpg") no-repeat center center;
+    background-size: cover;
+
+    &--show {
+        display: flex;
+    }
+}
+
+.video__play {
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    display: flex;
+    width: calc(100% + 2px);
+
+    &::before {
+        content: url("/img/icon-play.svg");
+        width: 101px;
+        height: 77px;
+        margin: auto;
+        cursor: pointer;
+    }
+}
