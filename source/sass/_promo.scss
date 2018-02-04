@@ -1,60 +1,63 @@
 .promo {
-    padding: 25px 30px;
+    padding: 0 9.3% 64px;
 }
 
 .promo__wrapper {
     position: relative;
+    border: 1px solid #ececec;
+    padding: 25px 30px 30px;
 }
 
 .promo__title {
     margin: 0;
     font-size: 17px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     display: flex;
     align-items: center;
-}
 
-.promo__title::before {
-    content: url("/img/icon-video.svg");
-    display: inline-block;
-    margin-right: 20px;
+    &::before {
+        content: url("/img/icon-video.svg");
+        display: inline-block;
+        margin-right: 30px;
 
-    @include setSize(32px, 37px);
+        @include setSize(32px, 37px);
+    }
 }
 
 .promo__video {
-    margin: 0 0 25px;
-    width: 260px;
-    height: 155px;
+    margin: 0 -30px 27px;
 }
 
 .promo__description {
     font-size: 13px;
     margin: 0;
     color: #444444;
-    line-height: 25px;
-    margin-bottom: 50px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    padding-right: 7px;
 }
 
 @media (min-width: $tablet-width) {
     .promo {
-        padding: 50px;
+        padding: 55px 50px 70px;
     }
 
     .promo__wrapper {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0 40px 40px;
     }
 
     .promo__description {
         font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 40px;
     }
 
     .promo__video {
         order: -1;
-        width: 100%;
-        height: 460px;
+        margin: 0 -40px 35px;
     }
 
     .promo__order {
@@ -91,8 +94,8 @@
         width: auto;
     }
 
-    .promo__info-wrapper {
-        width: 350px;
-        margin-top: 120px;
-    }
+    // .promo__info-wrapper {
+    //     width: 350px;
+    //     margin-top: 120px;
+    // }
 }
