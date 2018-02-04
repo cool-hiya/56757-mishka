@@ -7,8 +7,11 @@ function init() {
   myMap = new ymaps.Map("map", {
     center: [59.9387942, 30.3230833],
     zoom: 17,
-    controls: []
+    controls: [],
+
   });
+
+
   myMap.behaviors.disable('scrollZoom');
 
   myMap.controls.add("zoomControl", {
