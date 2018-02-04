@@ -12,7 +12,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .advantages__item {
@@ -22,7 +22,6 @@
     line-height: 20px;
     width: 50%;
     min-width: 260px;
-    max-width: 350px;
 }
 
 .advantages__item::before {
