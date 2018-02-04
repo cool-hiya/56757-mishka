@@ -19,7 +19,7 @@
     }
 
     .catalog {
-        width: $desktop-width;
+        max-width: $desktop-width;
         margin: 0 auto;
     }
 }

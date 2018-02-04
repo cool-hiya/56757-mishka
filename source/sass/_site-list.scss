@@ -67,16 +67,19 @@
         }
     }
 }
+
 @media (max-width: $tablet-width) {
-    .site-list__item{
-        &--open{
-            display:flex;
+    .site-list__item {
+        &--open {
+            display: flex;
         }
-        &--closed{
-            display:none;
+
+        &--closed {
+            display: none;
         }
     }
 }
+
 @media (min-width: $tablet-width) {
     .site-list {
         display: flex;

@@ -39,7 +39,7 @@
 
 @media (min-width: $desktop-width) {
     .footer__wrapper {
-        width: $desktop-width;
+        max-width: $desktop-width;
         margin: 0 auto;
     }
 }

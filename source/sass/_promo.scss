@@ -1,12 +1,8 @@
 .promo {
     padding: 25px 30px;
-    border: 1px solid black;
-    width: $mobile-width;
-    margin: 0 auto;
 }
 
 .promo__wrapper {
-    border: 1px solid blue;
     position: relative;
 }
 
@@ -29,7 +25,6 @@
 
 .promo__video {
     margin: 0 0 25px;
-    border: 1px solid black;
     width: 260px;
     height: 155px;
 }
@@ -45,7 +40,6 @@
 @media (min-width: $tablet-width) {
     .promo {
         padding: 50px;
-        width: $tablet-width;
     }
 
     .promo__wrapper {
@@ -71,7 +65,8 @@
 @media (min-width: $desktop-width) {
     .promo {
         padding: 50px;
-        width: $desktop-width;
+        max-width: $desktop-width;
+        margin: 0 auto;
     }
 
     .promo__video {
