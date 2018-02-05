@@ -1,9 +1,13 @@
 .size {
     @include resetList;
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .size__item {
-    display: inline-block;
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
@@ -11,12 +15,8 @@
     width: 80px;
     text-align: center;
     border: 2px solid #ececec;
-    line-height: 50px;
+    line-height: 45px;
     cursor: pointer;
-
-    & + & {
-        margin-left: 7px;
-    }
 }
 
 .size__item--active {
