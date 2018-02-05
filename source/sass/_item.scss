@@ -85,6 +85,10 @@
         flex-shrink: 0;
     }
 
+    .item__img {
+        height: 332px;
+    }
+
     .item__title {
         font-size: 20px;
     }
@@ -127,5 +131,9 @@
 
     .item__img-link {
         width: 100%;
+    }
+
+    .item__img {
+        height: 460px;
     }
 }
