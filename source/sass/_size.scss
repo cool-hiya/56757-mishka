@@ -12,11 +12,15 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #444444;
-    width: 80px;
+    flex-grow: 1;
     text-align: center;
     border: 2px solid #ececec;
     line-height: 45px;
     cursor: pointer;
+
+    & + & {
+        margin-left: 10px;
+    }
 }
 
 .size__item--active {
