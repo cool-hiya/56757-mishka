@@ -56,7 +56,7 @@
           <h3 class="fieldset__legend">Тип</h3>
           <div class="fieldset__input-wrapper">
             <p class="fieldset__radio  radio">
-              <input class="radio__input" type="radio" name="type" value="accs" id="accs" />
+              <input class="radio__input" type="radio" name="type" value="accs" id="accs" checked/>
               <label class="radio__label" for="accs">Аксессуар для интерьера</label>
             </p>
             <p class="fieldset__radio radio">
@@ -71,7 +71,7 @@
           <h3 class="fieldset__legend">Цвет</h3>
           <div class="fieldset__input-wrapper fieldset__input-wrapper--checkbox">
             <p class="fieldset__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox" name="color" value="white" id="white" />
+              <input class="checkbox__input" type="checkbox" name="color" value="white" id="white" checked/>
               <label class="checkbox__label" for="white">Белый</label>
             </p>
             <p class="fieldset__checkbox checkbox">
@@ -117,21 +117,19 @@
         </div>
       </div>
       <div class="order-form__center-wrapper">
-        <div class="order-form__fieldset fieldset">
+        <div class="order-form__fieldset fieldset fieldset--tel">
           <h3 class="fieldset__legend">Тел</h3>
           <div class="fieldset__input-wrapper">
-            <p class="fieldset__control control">
+            <p class="fieldset__control fieldset__control--tel control ">
               <label class="control__label visually-hidden" for="tel">Телефон:</label>
               <input class="control__input control__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" id="tel" required />
             </p>
           </div>
         </div>
-      </div>
-      <div class="order-form__center-wrapper">
         <div class="order-form__fieldset fieldset">
           <h3 class="fieldset__legend">E-mail</h3>
           <div class="fieldset__input-wrapper">
-            <p class="fieldset__control control">
+            <p class="fieldset__control fieldset__control--email control">
               <label class="control__label visually-hidden" for="email">E-mail:</label>
               <input class="control__input control__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required
               />
@@ -139,13 +137,14 @@
           </div>
         </div>
       </div>
+
       <div class="order-form__center-wrapper">
         <div class="order-form__fieldset fieldset">
           <h3 class="fieldset__legend">Доп</h3>
           <div class="fieldset__input-wrapper">
-            <p class="fieldset__control control">
+            <p class="fieldset__control fieldset__control--textarea control">
               <label class="control__label visually-hidden">Комментарий:</label>
-              <textarea class="control__textarea">Опишите все ваши пожелания к заказу</textarea>
+              <textarea class="control__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
           </div>
         </div>

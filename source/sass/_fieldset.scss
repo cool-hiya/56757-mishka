@@ -1,6 +1,9 @@
 .fieldset {
-    border: 1px solid red;
     padding: 0;
+}
+
+.fieldset__input-wrapper {
+    margin: 0 0 30px;
 }
 
 .fieldset__legend {
@@ -8,33 +11,129 @@
     color: #63d1bb;
     text-transform: uppercase;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0;
+
+    &::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #62d1ba;
+        margin-left: 25px;
+    }
+}
+
+.fieldset__radio,
+.fieldset__control {
+    margin: 17px 0;
+}
+
+.fieldset__checkbox,
+.fieldset__control--textarea {
+    margin: 22px 0;
+}
+
+.fieldset__control--tel,
+.fieldset__control--email {
+    margin: 0;
+}
+
+.fieldset__radio,
+.fieldset__checkbox,
+.fieldset__control {
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: $tablet-width) {
     .fieldset {
         display: flex;
+        align-items: flex-start;
+        padding: 48px 0;
+
+        &:not(:first-child) {
+            padding-top: 0;
+        }
+
+        &--tel {
+            padding-bottom: 27px;
+        }
     }
 
     .fieldset__legend {
         width: 165px;
         flex-shrink: 0;
+        line-height: 50px;
+
+        &::after {
+            display: none;
+        }
     }
 
     .fieldset__input-wrapper {
         flex-grow: 1;
+        margin-bottom: 0;
     }
 
     .fieldset__input-wrapper--checkbox {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .fieldset__checkbox {
-        width: 250px;
+        justify-content: space-between;
+        max-width: 505px;
     }
 
     .fieldset__control {
         display: flex;
-        align-items: center;
+        align-items: baseline;
+        margin: 0 0 25px;
+    }
+
+    .fieldset__radio {
+        margin: 0 0 22px;
+    }
+
+    .fieldset__checkbox {
+        margin: 0 0 22px;
+        width: 240px;
+
+        &:nth-child(5),
+        &:nth-child(6) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .fieldset {
+        padding: 49px 0;
+
+        &--tel {
+            padding-bottom: 27px;
+        }
+    }
+
+    .fieldset__legend {
+        width: 175px;
+        padding-left: 60px;
+    }
+
+    .fieldset__input-wrapper {
+        max-width: 700px;
+
+        &--checkbox {
+            max-width: 825px;
+            justify-content: flex-start;
+        }
+    }
+
+    .fieldset__checkbox {
+        width: 262px;
+
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
     }
 }
