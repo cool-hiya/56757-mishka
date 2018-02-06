@@ -5,35 +5,7 @@
 @import "variables";
 
 //Глобальные стили
-
 @import "globals";
 
 //Блоки
-@import "map";
-@import "video";
-@import "button";
-@import "table";
-@import "order-form";
-@import "fieldset";
-@import "radio";
-@import "checkbox";
-@import "control";
-@import "slider";
-@import "main-nav";
-@import "site-list";
-@import "page-main";
-@import "catalog-nav";
-@import "featured-item";
-@import "advantages";
-@import "reviews";
-@import "contacts";
-@import "page-footer";
-@import "socials";
-@import "social";
-@import "copyright";
-@import "modal";
-@import "size";
-@import "page-title";
-@import "catalog";
-@import "item";
-@import "promo";
+@import "blocks/blocks";
