@@ -84,7 +84,7 @@
     .site-list {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 $large-offset;
+        padding: 0 50px;
     }
 
     .site-list__link {
@@ -157,12 +157,17 @@
         &--order,
         &--catalog {
             order: -3;
-            margin-right: 68px;
+            margin-right: 34px;
             height: 90px;
 
             .site-list__link {
                 font-size: 17px;
+                padding-right: 34px;
             }
+        }
+
+        &--catalog {
+            border-right: 1px solid #ececec;
         }
 
         &--new,
