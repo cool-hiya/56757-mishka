@@ -8,4 +8,3 @@ function showModal() {
 button.addEventListener("click", function () {
   modal.classList.remove("visible");
 });
-

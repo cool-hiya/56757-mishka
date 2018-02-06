@@ -7,5 +7,3 @@ play.addEventListener("click", function () {
   poster.classList.remove("video__poster--show");
   video.play();
 });
-
-
