@@ -19,6 +19,14 @@
 
         @include setSize(20px, 14px);
     }
+
+    &--closed {
+        &::after {
+            content: url("/img/icon-menu-close.svg");
+
+            @include setSize(21px, 21px);
+        }
+    }
 }
 
 @media (min-width: $tablet-width) {

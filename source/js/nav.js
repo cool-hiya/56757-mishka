@@ -8,6 +8,7 @@ for (var i = 0; i < navMain.length; i++) {
   navMain[i].classList.add("site-list__item--closed");
 }
 navToggle.addEventListener("click", function () {
+  navToggle.classList.toggle("main-nav__toggle--closed");
   for (var i = 0; i < navMain.length; i++) {
     if (navMain[i].classList.contains("site-list__item--closed")) {
       navMain[i].classList.remove("site-list__item--closed");
