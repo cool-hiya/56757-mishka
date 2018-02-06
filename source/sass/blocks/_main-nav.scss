@@ -27,6 +27,10 @@
             @include setSize(21px, 21px);
         }
     }
+
+    &--no-js {
+        display: none;
+    }
 }
 
 @media (min-width: $tablet-width) {
