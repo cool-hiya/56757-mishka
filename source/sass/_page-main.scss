@@ -31,7 +31,7 @@
 
 @media (min-width: $desktop-width) {
     .page-main__title-wrapper {
-        width: $desktop-width;
+        max-width: $desktop-width;
         padding-top: 115px;
     }
 

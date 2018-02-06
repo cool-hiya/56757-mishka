@@ -111,7 +111,7 @@
 @media (min-width: $desktop-width) {
     .contacts {
         display: block;
-        width: $desktop-width;
+        max-width: $desktop-width;
         padding: 130px 50px 105px 115px;
         margin: 0 auto;
     }

@@ -119,7 +119,7 @@
 
 @media (min-width: $desktop-width) {
     .featured-item {
-        width: $desktop-width;
+        max-width: $desktop-width;
         margin: 0 auto;
         padding: 70px 50px 95px;
     }
