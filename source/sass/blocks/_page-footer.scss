@@ -8,12 +8,20 @@
 }
 
 .page-footer__copyright {
-    margin-top: 20px;
+    margin-top: 18px;
     text-align: center;
 }
 
 .page-footer__logo-link {
     display: none;
+
+    &:hover svg path {
+        fill: #46c1ae;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,7 +29,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 50px;
+        padding: 50px 46px 50px 50px;
     }
 
     .page-footer__copyright {

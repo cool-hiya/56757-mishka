@@ -1,23 +1,21 @@
-.copyright {
+.copyright__link {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+
+    &:hover svg path {
+        fill: #46c1ae;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
 }
 
 .copyright__text {
     font-size: 19px;
     font-weight: bold;
-    margin-right: 30px;
-}
-
-.copyright__link {
-    font-size: 0;
-    display: inline-block;
-}
-
-.copyright__link::before {
-    content: url("/img/logo-htmlacademy.svg");
-    display: inline-block;
-
-    @include setSize(27px, 34px);
+    margin-right: 23px;
+    color: #000000;
 }
