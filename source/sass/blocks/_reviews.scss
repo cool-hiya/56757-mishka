@@ -1,11 +1,16 @@
+.reviews {
+    background: url("/img/bg-zigzag-line.svg") repeat-x bottom center;
+    background-size: 100%;
+}
+
 .reviews__wrapper {
-    padding: 25px 9.3% 55px;
+    padding: 30px 9.3% 50px;
     position: relative;
 }
 
 .reviews__title {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
 }
 
 .reviews__item {
@@ -24,6 +29,7 @@
     margin-bottom: 8px;
     font-size: 17px;
     font-weight: bold;
+    font-style: normal;
     color: #444444;
 }
 
@@ -46,8 +52,7 @@
 
     .reviews__wrapper {
         background: url("/img/review@1x.jpg") no-repeat top left;
-        background-size: calc(50% - 35px);
-        padding: 73px 50px 50px;
+        padding: 73px 47px 50px;
     }
 
     .reviews__title {
@@ -57,13 +62,14 @@
 
     .reviews__item p {
         font-size: 17px;
-        margin-bottom: 60px;
+        margin-bottom: 57px;
     }
 
     .reviews__toggles {
         position: absolute;
         right: 50px;
         bottom: 45px;
+        min-width: 175px;
     }
 
     .reviews__write {
@@ -71,18 +77,21 @@
         right: 50px;
         top: 80px;
     }
+
+    .reviews__author-name {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: $desktop-width) {
     .reviews {
-        max-width: $desktop-width;
+        max-width: calc(#{$desktop-width} - 100px);
         margin: 0 auto;
-        padding-left: 50px;
         padding-bottom: 90px;
     }
 
     .reviews__wrapper {
-        padding: 60px 130px 65px 175px;
+        padding: 62px 100px 65px 174px;
     }
 
     .reviews__title {
@@ -96,5 +105,10 @@
 
     .reviews__toggles {
         bottom: 60px;
+        right: 0;
+    }
+
+    .reviews__write {
+        right: 0;
     }
 }
