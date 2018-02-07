@@ -1,0 +1,15 @@
+.social {
+    line-height: 0;
+}
+
+.social__link {
+    display: inline-block;
+
+    &:hover svg path {
+        fill: #63d1bb;
+    }
+
+    &:active svg path {
+        opacity: 0.3;
+    }
+}

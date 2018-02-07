@@ -1,0 +1,46 @@
+.main-nav {
+    position: relative;
+}
+
+.main-nav__toggle {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 9.3%;
+    top: 30px;
+
+    &::after {
+        content: url("/img/icon-menu-open.svg");
+        display: inline-block;
+
+        @include setSize(20px, 14px);
+    }
+
+    &--closed {
+        &::after {
+            content: url("/img/icon-menu-close.svg");
+
+            @include setSize(21px, 21px);
+        }
+    }
+
+    &--no-js {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .main-nav__toggle::after {
+        display: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-nav {
+        max-width: $desktop-width;
+        margin: 0 auto;
+    }
+}

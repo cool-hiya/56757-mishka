@@ -1,0 +1,21 @@
+.copyright__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover svg path {
+        fill: #46c1ae;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+.copyright__text {
+    font-size: 19px;
+    font-weight: bold;
+    margin-right: 23px;
+    color: #000000;
+}

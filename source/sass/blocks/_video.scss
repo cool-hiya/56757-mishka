@@ -1,0 +1,48 @@
+.video {
+    position: relative;
+    text-align: center;
+}
+
+.video__file {
+    width: calc(100% - 2px);
+    min-height: 150px;
+}
+
+.video__poster {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: url("/img/video-mobile@1x.jpg") no-repeat center center;
+    background-size: cover;
+
+    &--show {
+        display: flex;
+    }
+}
+
+.video__play {
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+
+    &::before {
+        content: url("/img/icon-play.svg");
+        width: 101px;
+        height: 77px;
+        margin: auto;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .video__file {
+        min-height: 450px;
+    }
+}

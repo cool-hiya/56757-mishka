@@ -1,0 +1,25 @@
+.table {
+    width: 100%;
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 30px;
+
+    td {
+        height: 38px;
+    }
+}
+
+.table__field,
+.table__value {
+    border-bottom: 1px solid #ececec;
+}
+
+.table__field {
+    width: 92px;
+}
+
+@media (min-width: $desktop-width) {
+    td {
+        height: 40px;
+    }
+}
