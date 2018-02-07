@@ -17,53 +17,49 @@
         justify-content: center;
         align-items: center;
     }
-
-    &--search {
-        .site-list__link::before {
-            content: url("/img/icon-search.svg");
-        }
-    }
-
-    &--cart {
-        .site-list__link::before {
-            content: url("/img/icon-cart.svg");
-        }
-    }
 }
 
 .site-list__link {
+    position: relative;
     display: flex;
     align-items: center;
     flex-grow: 1;
-    padding: 0 9.3%;
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
     color: #000000;
     text-decoration: none;
     cursor: pointer;
+    padding: 0 9.3% 0 22.8%;
 
-    &::before {
-        content: "";
-        margin-right: 9.3%;
+    &--logo {
+        padding: 0;
+        flex-grow: 0;
 
-        @include setSize(20px, 20px);
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     &:hover {
-        opacity: 0.6;
+        color: rgba(0, 0, 0, 0.6);
     }
 
     &:active {
         opacity: 0.3;
     }
 
-    &--logo {
-        flex-grow: 0;
-        padding: 0;
+    svg {
+        opacity: 0.2;
+        position: absolute;
+        left: 9.3%;
+    }
 
-        &::before {
-            display: none;
+    &:hover svg {
+        opacity: 1;
+
+        path {
+            fill: #63d1bb;
         }
     }
 }
@@ -84,15 +80,21 @@
     .site-list {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 50px;
     }
 
     .site-list__link {
         padding: 0;
 
-        &::before {
-            display: none;
+        svg {
+            position: static;
+            margin: 0 32px;
         }
+    }
+
+    .site-list__logo-image {
+        width: 112px;
+        height: auto;
+        margin-left: 50px;
     }
 
     .site-list__item {
@@ -102,34 +104,28 @@
         &--search,
         &--cart {
             order: -1;
-
-            .site-list__link::before {
-                display: flex;
-                margin-right: 0;
-                padding: 0 32px;
-            }
         }
 
         &--logo {
             order: -2;
-            width: calc(100% - 355px);
+            width: calc(100% - 400px);
             justify-content: flex-start;
         }
 
         &--search {
             margin-left: auto;
-            border-right: 1px solid #ececec;
-            border-left: 1px solid #ececec;
 
             .site-list__link {
                 font-size: 0;
+                border-right: 1px solid #ececec;
+                border-left: 1px solid #ececec;
             }
         }
 
         &--catalog,
         &--free-del,
         &--order {
-            height: 60px;
+            height: 58px;
 
             .site-list__link {
                 font-size: 15px;
@@ -138,6 +134,7 @@
 
         &--free-del {
             display: flex;
+            margin-right: 50px;
             margin-left: auto;
             pointer-events: none;
 
@@ -148,6 +145,13 @@
 
         &--catalog {
             margin-right: 35px;
+            margin-left: 50px;
+        }
+
+        &--cart {
+            .site-list__link {
+                padding-right: 50px;
+            }
         }
     }
 }
@@ -157,8 +161,8 @@
         &--order,
         &--catalog {
             order: -3;
-            margin-right: 34px;
             height: 90px;
+            margin-right: 0;
 
             .site-list__link {
                 font-size: 17px;
@@ -166,19 +170,34 @@
             }
         }
 
+        &--order {
+            .site-list__link {
+                padding-left: 34px;
+            }
+        }
+
         &--catalog {
             border-right: 1px solid #ececec;
+            margin-left: 0;
+
+            .site-list__link {
+                padding-left: 50px;
+            }
         }
 
         &--new,
         &--sale {
             display: flex;
             margin-right: 60px;
-            height: 60px;
+            height: 58px;
 
             .site-list__link {
                 font-size: 15px;
             }
+        }
+
+        &--new {
+            margin-left: 50px;
         }
 
         &--logo {
@@ -187,7 +206,12 @@
         }
 
         &--free-del {
-            height: 60px;
+            height: 58px;
         }
+    }
+
+    .site-list__logo-image {
+        width: 148px;
+        margin-left: 0;
     }
 }
