@@ -16,6 +16,7 @@
 
 .catalog-item__img-link {
     line-height: 0;
+    z-index: 3;
 
     &:hover + .catalog-item__info {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
@@ -118,6 +119,7 @@
         flex-direction: column;
         flex-grow: 1;
         padding-bottom: 25px;
+        border-left: none;
     }
 
     .catalog-item__features {
@@ -148,6 +150,10 @@
         &:not(:nth-child(3n)) {
             margin-right: 50px;
         }
+    }
+
+    .catalog-item__info {
+        border: 1px solid #ededed;
     }
 
     .catalog-item__img-link {
