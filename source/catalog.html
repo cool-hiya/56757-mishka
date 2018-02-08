@@ -164,7 +164,6 @@
     </section>
     <article class="promo">
       <div class="promo__wrapper">
-        <h2 class="promo__title">Процесс производства</h2>
         <div class="promo__video video">
           <video class="video__file" controls>
             <source src="/video/big_buck_bunny.mp4" type="video/mp4">
@@ -172,11 +171,16 @@
             <source src="/video/big_buck_bunny.webm" type="video/webm">
           </video>
           <div class="video__poster">
-            <button type="button" class="video__play">Воспроизвести</button>
+            <button type="button" class="video__play">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
           </div>
         </div>
-        <p class="promo__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="promo__order button" href="form.html">Сделать заказ</a>
+        <div class="promo__info">
+          <h2 class="promo__title">Процесс производства</h2>
+          <p class="promo__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="promo__order button" href="form.html">Сделать заказ</a>
+        </div>
       </div>
     </article>
   </main>
