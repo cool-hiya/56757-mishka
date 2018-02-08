@@ -14,13 +14,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     background: url("/img/video-mobile@1x.jpg") no-repeat center center;
     background-size: cover;
-
-    &--show {
-        display: flex;
-    }
 }
 
 .video__play {
