@@ -11,14 +11,17 @@
     .page-title {
         margin-top: -60px;
         font-size: 43px;
-        padding: 90px 50px 75px;
+        padding: 90px 50px 84px;
         border-top: 1px solid #dfdfdf;
+        background: #f1f1f1 url("/img/bg-zigzag-fill.svg") repeat-x bottom center;
+        background-size: auto 23px;
     }
 }
 
 @media (min-width: $desktop-width) {
     .page-title {
         font-size: 53px;
-        padding: 88px 50px 90px;
+        padding: 85px 50px 112px;
+        background-size: auto 34px;
     }
 }
