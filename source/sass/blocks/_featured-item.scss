@@ -36,13 +36,14 @@
 
 .featured-item__img {
     width: 100%;
-    max-width: 350px;
 }
 
 .featured-item__img-container {
     order: 1;
     align-self: center;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .featured-item__features {
@@ -85,11 +86,8 @@
     .featured-item__img-container {
         float: right;
         width: 50%;
+        max-width: none;
         margin: 7px  0  0 45px;
-    }
-
-    .featured-item__img {
-        max-width: 525px;
     }
 
     .featured-item__features {
