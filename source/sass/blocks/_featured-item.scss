@@ -1,3 +1,8 @@
+.featured-item {
+    position: relative;
+    z-index: 2;
+}
+
 .featured-item__wrapper {
     position: relative;
     padding: 27px 9.3% 40px;
@@ -61,12 +66,13 @@
 @media (min-width: $tablet-width) {
     .featured-item {
         background: url("/img/bg-zigzag-fill.svg") repeat-x top center;
-        margin-top: -15px;
+        background-size: auto 23px;
+        margin-top: -10px;
     }
 
     .featured-item__wrapper {
         display: block;
-        padding: 56px 50px 65px;
+        padding: 51px 50px 65px;
         background-size: auto 14px;
 
         &::after {
@@ -127,6 +133,11 @@
 }
 
 @media (min-width: $desktop-width) {
+    .featured-item {
+        background-size: auto 37px;
+        margin-top: -15px;
+    }
+
     .featured-item__wrapper {
         max-width: calc(#{$desktop-width} - 100px);
         margin-left: auto;
