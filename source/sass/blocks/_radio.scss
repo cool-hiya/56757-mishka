@@ -36,7 +36,7 @@
         left: 12px;
         top: 6px;
 
-        @include setSize(15px, 15px);
+        @include setSize(16px, 16px);
     }
 }
 
@@ -61,8 +61,8 @@
 
     .radio__input:checked {
         & + .radio__label::after {
-            left: 17px;
-            top: 17px;
+            left: 18px;
+            top: 18px;
 
             @include setSize(20px, 20px);
         }

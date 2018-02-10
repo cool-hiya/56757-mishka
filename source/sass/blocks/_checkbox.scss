@@ -34,9 +34,9 @@
         border-top: transparent;
         border-left: transparent;
         position: absolute;
-        left: 0;
+        left: 17px;
+        top: 10px;
         transform: rotate(45deg);
-        margin-left: 15px;
     }
 }
 
@@ -60,7 +60,7 @@
     .checkbox__input:checked + .checkbox__label::after {
         @include setSize(15px, 30px);
 
-        margin-top: -7px;
-        margin-left: 18px;
+        left: 20px;
+        top: 8px;
     }
 }
