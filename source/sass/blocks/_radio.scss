@@ -14,7 +14,7 @@
         margin-top: -6px;
         flex-shrink: 0;
 
-        @include setSize(35px, 35px);
+        @include setSize(40px, 40px);
     }
 
     &:hover::before {
@@ -55,7 +55,7 @@
             margin-right: 30px;
             margin-top: 0;
 
-            @include setSize(50px, 50px);
+            @include setSize(55px, 55px);
         }
     }
 

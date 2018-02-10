@@ -12,7 +12,7 @@
         border: 2px solid #444444;
         margin-right: 23px;
 
-        @include setSize(36px, 36px);
+        @include setSize(40px, 40px);
     }
 
     &:hover::before {
@@ -51,7 +51,7 @@
         font-size: 19px;
 
         &::before {
-            @include setSize(50px, 50px);
+            @include setSize(53px, 53px);
 
             margin-right: 30px;
         }
@@ -60,7 +60,7 @@
     .checkbox__input:checked + .checkbox__label::after {
         @include setSize(15px, 30px);
 
-        margin-top: -10px;
+        margin-top: -7px;
         margin-left: 18px;
     }
 }
