@@ -40,7 +40,7 @@
     }
 }
 
-.checkbox__input:disabled {
+.checkbox__input:active {
     + .checkbox__label::before {
         border-color: rgba(68, 68, 68, 0.3);
     }

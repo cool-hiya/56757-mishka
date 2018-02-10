@@ -40,7 +40,7 @@
     }
 }
 
-.radio__input:disabled {
+.radio__input:active {
     + .radio__label::before {
         border-color: rgba(68, 68, 68, 0.3);
     }
