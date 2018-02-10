@@ -121,9 +121,10 @@
           <small class="featured-item__lable">Товар недели</small>
         </h2>
         <picture class="featured-item__img-container">
-          <source media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg">
-          <img class="featured-item__img" src="/img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" />
+          <source media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.jpg 1x, /img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg 333w, /img/triple-set-tablet@2x.jpg 666w" sizes="40vw">
+          <img class="featured-item__img" srcset="/img/triple-set-mobile@1x.jpg 260w, /img/triple-set-mobile@2x.jpg 520w" sizes="80vw"  src="/img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки"
+          />
         </picture>
         <p class="featured-item__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
@@ -143,7 +144,7 @@
           </tr>
         </table>
         <b class="featured-item__price">Цена: 990 руб.</b>
-        <button class="featured-item__order button" type="button" onClick="showModal()">Заказать</button>
+        <button class="featured-item__order button js-modal-opener" type="button">Заказать</button>
       </div>
     </section>
     <section class="advantages">
@@ -176,8 +177,12 @@
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--prev" type="button">Предыдущий отзыв</button>
-          <button class="slider__toggle slider__toggle--next" type="button">Следующий отзыв</button>
+          <button class="slider__toggle slider__toggle--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="slider__toggle slider__toggle--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
         </p>
         <a href="#" class="reviews__write button">Написать</a>
       </div>
@@ -316,10 +321,7 @@
       <button class="modal__button button button--green" type="button">Добавить</button>
     </div>
   </div>
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement("picture");
-  </script>
+  <script src="js/picturefill-init.js" async></script>
   <script src="js/picturefill.min.js" async></script>
   <script src="js/nav.js"></script>
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>

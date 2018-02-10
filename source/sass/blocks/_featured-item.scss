@@ -1,10 +1,15 @@
+.featured-item {
+    position: relative;
+    z-index: 2;
+}
+
 .featured-item__wrapper {
     position: relative;
     padding: 27px 9.3% 40px;
     display: flex;
     flex-direction: column;
     background: url("/img/bg-zigzag-line.svg") repeat-x bottom center;
-    background-size: 100%;
+    background-size: auto 5px;
 }
 
 .featured-item__title {
@@ -31,13 +36,14 @@
 
 .featured-item__img {
     width: 100%;
-    max-width: 350px;
 }
 
 .featured-item__img-container {
     order: 1;
     align-self: center;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .featured-item__features {
@@ -61,12 +67,14 @@
 @media (min-width: $tablet-width) {
     .featured-item {
         background: url("/img/bg-zigzag-fill.svg") repeat-x top center;
-        margin-top: -15px;
+        background-size: auto 23px;
+        margin-top: -10px;
     }
 
     .featured-item__wrapper {
         display: block;
-        padding: 56px 50px 65px;
+        padding: 51px 50px 65px;
+        background-size: auto 14px;
 
         &::after {
             content: "";
@@ -78,11 +86,8 @@
     .featured-item__img-container {
         float: right;
         width: 50%;
+        max-width: none;
         margin: 7px  0  0 45px;
-    }
-
-    .featured-item__img {
-        max-width: 525px;
     }
 
     .featured-item__features {
@@ -126,11 +131,17 @@
 }
 
 @media (min-width: $desktop-width) {
+    .featured-item {
+        background-size: auto 37px;
+        margin-top: -15px;
+    }
+
     .featured-item__wrapper {
         max-width: calc(#{$desktop-width} - 100px);
         margin-left: auto;
         margin-right: auto;
         padding: 80px 0 90px;
+        background-size: auto 18px;
     }
 
     .featured-item__title {

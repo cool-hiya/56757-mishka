@@ -20,6 +20,16 @@ body {
     position: relative;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -31,8 +41,4 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-* {
-    box-sizing: border-box;
 }

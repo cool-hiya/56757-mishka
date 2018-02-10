@@ -12,7 +12,11 @@
         border: 2px solid #444444;
         margin-right: 23px;
 
-        @include setSize(35px, 35px);
+        @include setSize(36px, 36px);
+    }
+
+    &:hover::before {
+        border-color: #62d1ba;
     }
 }
 
@@ -20,22 +24,32 @@
     display: none;
 }
 
-.checkbox__input:checked + .checkbox__label::after {
-    content: "";
+.checkbox__input:checked {
+    + .checkbox__label::after {
+        content: "";
 
-    @include setSize(8px, 19px);
+        @include setSize(8px, 19px);
 
-    border: 2px solid #444444;
-    border-top: transparent;
-    border-left: transparent;
-    position: absolute;
-    left: 0;
-    transform: rotate(45deg);
-    margin-left: 15px;
+        border: 2px solid #444444;
+        border-top: transparent;
+        border-left: transparent;
+        position: absolute;
+        left: 0;
+        transform: rotate(45deg);
+        margin-left: 15px;
+    }
+}
+
+.checkbox__input:disabled {
+    + .checkbox__label::before {
+        border-color: rgba(68, 68, 68, 0.3);
+    }
 }
 
 @media (min-width: $tablet-width) {
     .checkbox__label {
+        font-size: 19px;
+
         &::before {
             @include setSize(50px, 50px);
 

@@ -1,10 +1,13 @@
 var modal = document.querySelector(".modal");
-var button = document.querySelector(".modal__button");
+var modalButton = document.querySelector(".modal__button");
+var modalOpener = document.querySelectorAll(".js-modal-opener");
 
-function showModal() {
-  modal.classList.add("visible");
-}
+modalOpener.forEach(function (modalOpener) {
+  modalOpener.addEventListener("click", function () {
+    modal.classList.add("modal--visible");
+  });
+});
 
-button.addEventListener("click", function () {
-  modal.classList.remove("visible");
+modalButton.addEventListener("click", function () {
+  modal.classList.remove("modal--visible");
 });

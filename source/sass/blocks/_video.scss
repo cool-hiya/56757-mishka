@@ -4,8 +4,8 @@
 }
 
 .video__file {
-    width: calc(100% - 2px);
-    min-height: 150px;
+    width: 100%;
+    min-height: 145px;
 }
 
 .video__poster {
@@ -14,35 +14,62 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     background: url("/img/video-mobile@1x.jpg") no-repeat center center;
     background-size: cover;
 
-    &--show {
-        display: flex;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/video-mobile@2x.jpg");
     }
 }
 
 .video__play {
-    font-size: 0;
     border: none;
     background-color: transparent;
     outline: none;
     padding: 0;
-    display: flex;
-    width: 100%;
+    margin: auto;
 
     &::before {
-        content: url("/img/icon-play.svg");
+        content: "";
         width: 101px;
         height: 77px;
-        margin: auto;
         cursor: pointer;
+        display: inline-block;
+        background: url("/img/icon-play.svg") no-repeat center center;
+        background-size: cover;
+    }
+
+    &:hover::before {
+        transform: scale(1.2);
+    }
+
+    &:active::before {
+        transform: scale(0.8);
+        opacity: 0.3;
     }
 }
 
 @media (min-width: $tablet-width) {
     .video__file {
         min-height: 450px;
+    }
+
+    .video__poster {
+        background-image: url("/img/video-tablet@1x.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("/img/video-tablet@2x.jpg");
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .video__poster {
+        background-image: url("/img/video-desktop@1x.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("/img/video-desktop@2x.jpg");
+        }
     }
 }
