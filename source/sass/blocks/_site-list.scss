@@ -38,29 +38,34 @@
         &:hover {
             opacity: 0.6;
         }
+
+        &:active {
+            opacity: 0.3;
+        }
     }
 
     &:hover {
         color: rgba(0, 0, 0, 0.6);
+
+        .site-list__icon {
+            fill: #63d1bb;
+            opacity: 1;
+        }
     }
 
     &:active {
-        opacity: 0.3;
-    }
+        color: rgba(0, 0, 0, 0.3);
 
-    svg {
-        opacity: 0.2;
-        position: absolute;
-        left: 9.3%;
-    }
-
-    &:hover svg {
-        opacity: 1;
-
-        path {
-            fill: #63d1bb;
+        .site-list__icon {
+            opacity: 0.3;
         }
     }
+}
+
+.site-list__icon {
+    position: absolute;
+    left: 9.3%;
+    opacity: 0.2;
 }
 
 @media (max-width: $mobile-only-width) {
@@ -83,11 +88,11 @@
 
     .site-list__link {
         padding: 0;
+    }
 
-        svg {
-            position: static;
-            margin: 0 32px;
-        }
+    .site-list__icon {
+        position: static;
+        margin: 0 32px;
     }
 
     .site-list__logo-image {
