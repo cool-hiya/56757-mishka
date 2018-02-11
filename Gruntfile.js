@@ -24,6 +24,55 @@ module.exports = function (grunt) {
       }
     },
 
+    csso: {
+      compress: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "source/css/style.min.css": ["source/css/style.css"]
+        }
+      }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg,svg}"],
+        }]
+      }
+    },
+
+    cwebp: {
+      images: {
+        options: {
+          q: 90
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg}"],
+        }]
+      }
+    },
+
+    // svgstore: {
+    //   options: {
+    //     prefix: 'icon-', // This will prefix each ID
+    //     svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
+    //       viewBox: '0 0 100 100',
+    //       xmlns: 'http://www.w3.org/2000/svg'
+    //     }
+    //   },
+    //   your_target: {
+    //     // Target-specific file lists and/or options go here.
+    //   },
+    // },
+
     browserSync: {
       server: {
         bsFiles: {
