@@ -1,10 +1,8 @@
 "use strict";
 
-module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-sass");
+module.exports = function (grunt) {
+
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     sass: {

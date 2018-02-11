@@ -13,9 +13,11 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
+      <!--Иконка открытия/закрытия меню отключается по классy c модификатором no-js-->
       <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+       <!--Отображение пунктов меню на мобильном ругулируется классом c модификатором -closed и -opened-->
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--logo">
           <a class="site-list__link site-list__link--logo">
@@ -92,6 +94,11 @@
           <small class="featured-item__lable">Товар недели</small>
         </h2>
         <picture class="featured-item__img-container">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.webp 1x, /img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.webp 333w, /img/triple-set-tablet@2x.webp 666w"
+            sizes="40vw">
+          <source type="image/webp" srcset="/img/triple-set-mobile@1x.webp 260w, /img/triple-set-mobile@2x.webp 520w" sizes="80vw"
+          />
           <source media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.jpg 1x, /img/triple-set-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg 333w, /img/triple-set-tablet@2x.jpg 666w" sizes="40vw">
           <img class="featured-item__img" srcset="/img/triple-set-mobile@1x.jpg 260w, /img/triple-set-mobile@2x.jpg 520w" sizes="80vw"
@@ -154,8 +161,9 @@
           <span class="advantages__icon-wrapper">
             <svg class="advantages__icon" width="54" height="23" aria-hidden="true" role="presentation">
               <use xlink:href="img/sprite.svg#icon-rocket"></use>
+            </svg>
           </span>
-          </svg>Поддержка отечественного
+          Поддержка отечественного
           <br/> производителя</li>
         <li class="advantages__item advantages__item--gift">
           <span class="advantages__icon-wrapper">
