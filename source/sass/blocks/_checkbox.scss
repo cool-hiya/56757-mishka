@@ -12,7 +12,7 @@
         border: 2px solid #444444;
         margin-right: 23px;
 
-        @include setSize(36px, 36px);
+        @include setSize(40px, 40px);
     }
 
     &:hover::before {
@@ -34,13 +34,13 @@
         border-top: transparent;
         border-left: transparent;
         position: absolute;
-        left: 0;
+        left: 17px;
+        top: 10px;
         transform: rotate(45deg);
-        margin-left: 15px;
     }
 }
 
-.checkbox__input:disabled {
+.checkbox__input:active {
     + .checkbox__label::before {
         border-color: rgba(68, 68, 68, 0.3);
     }
@@ -51,7 +51,7 @@
         font-size: 19px;
 
         &::before {
-            @include setSize(50px, 50px);
+            @include setSize(53px, 53px);
 
             margin-right: 30px;
         }
@@ -60,7 +60,7 @@
     .checkbox__input:checked + .checkbox__label::after {
         @include setSize(15px, 30px);
 
-        margin-top: -10px;
-        margin-left: 18px;
+        left: 20px;
+        top: 8px;
     }
 }

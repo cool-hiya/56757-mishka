@@ -5,11 +5,11 @@
 .social__link {
     display: inline-block;
 
-    &:hover svg path {
-        fill: #63d1bb;
+    &:hover .social__icon {
+        fill: #46c1ae;
     }
 
-    &:active svg path {
+    &:active .social__icon {
         opacity: 0.3;
     }
 }

@@ -14,7 +14,7 @@
         margin-top: -6px;
         flex-shrink: 0;
 
-        @include setSize(35px, 35px);
+        @include setSize(40px, 40px);
     }
 
     &:hover::before {
@@ -36,11 +36,11 @@
         left: 12px;
         top: 6px;
 
-        @include setSize(15px, 15px);
+        @include setSize(16px, 16px);
     }
 }
 
-.radio__input:disabled {
+.radio__input:active {
     + .radio__label::before {
         border-color: rgba(68, 68, 68, 0.3);
     }
@@ -55,14 +55,14 @@
             margin-right: 30px;
             margin-top: 0;
 
-            @include setSize(50px, 50px);
+            @include setSize(55px, 55px);
         }
     }
 
     .radio__input:checked {
         & + .radio__label::after {
-            left: 17px;
-            top: 17px;
+            left: 18px;
+            top: 18px;
 
             @include setSize(20px, 20px);
         }

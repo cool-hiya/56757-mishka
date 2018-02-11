@@ -1,16 +1,13 @@
 .control {
     position: relative;
+}
 
-    svg {
-        position: absolute;
-        right: 7px;
-        top: 50%;
-        transform: translateY(-50%);
-
-        path {
-            opacity: 0.2;
-        }
-    }
+.control__input-icon {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
 }
 
 .control__label {
@@ -38,7 +35,7 @@
     &:focus {
         border-color: #62d1ba;
 
-        & + svg path {
+        & + .control__input-icon {
             fill: #62d1ba;
             opacity: 1;
         }
@@ -62,10 +59,8 @@
 }
 
 @media (min-width: $tablet-width) {
-    .control {
-        svg {
-            right: 23px;
-        }
+    .control__input-icon {
+        right: 25px;
     }
 
     .control__label {
@@ -89,9 +84,7 @@
 }
 
 @media (min-width: $desktop-width) {
-    .control {
-        svg {
-            right: 7px;
-        }
+    .control__input-icon {
+        right: 7px;
     }
 }

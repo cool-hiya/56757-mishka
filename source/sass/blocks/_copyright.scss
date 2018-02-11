@@ -4,7 +4,7 @@
     align-items: center;
     text-decoration: none;
 
-    &:hover svg path {
+    &:hover .copyright__icon {
         fill: #46c1ae;
     }
 
@@ -13,9 +13,13 @@
     }
 }
 
+.copyright__icon {
+    fill: #63d1bb;
+}
+
 .copyright__text {
     font-size: 19px;
     font-weight: bold;
-    margin-right: 23px;
+    margin-right: 30px;
     color: #000000;
 }

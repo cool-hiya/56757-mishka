@@ -25,37 +25,17 @@
     max-width: 360px;
 }
 
-.advantages__item::before {
-    content: "";
-    display: block;
-    text-align: center;
+.advantages__icon-wrapper {
+    display: flex;
+    flex-shrink: 0;
     margin-bottom: 16px;
 
     @include setSize(50px, 45px);
 }
 
-.advantages__item--eco::before {
-    background: url("/img/icon-feature-flower.svg") no-repeat center center;
-}
-
-.advantages__item--style::before {
-    background: url("/img/icon-feature-money.svg") no-repeat center center;
-}
-
-.advantages__item--like::before {
-    background: url("/img/icon-feature-heart.svg") no-repeat center center;
-}
-
-.advantages__item--hand-made::before {
-    background: url("/img/icon-feature-ball.svg") no-repeat center center;
-}
-
-.advantages__item--support::before {
-    background: url("/img/icon-feature-rocket.svg") no-repeat center center;
-}
-
-.advantages__item--gift::before {
-    background: url("/img/icon-feature-gift.svg") no-repeat center center;
+.advantages__icon {
+    fill: #63d1bb;
+    margin: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -89,10 +69,10 @@
         &--gift {
             order: 6;
         }
+    }
 
-        &::before {
-            margin-bottom: 12px;
-        }
+    .advantages__icon-wrapper {
+        margin-bottom: 12px;
     }
 }
 
