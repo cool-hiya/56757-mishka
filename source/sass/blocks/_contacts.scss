@@ -112,7 +112,7 @@
     .contacts__write {
         width: auto;
         min-width: 230px;
-        margin: auto;
+        align-self: center;
     }
 }
 
@@ -150,6 +150,7 @@
     }
 
     .contacts__write {
+        align-self: flex-start;
         margin-left: 108px;
     }
 
