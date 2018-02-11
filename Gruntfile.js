@@ -72,6 +72,21 @@ module.exports = function (grunt) {
       },
     },
 
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          cwd: "source",
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**"
+          ],
+          dest: "build"
+        }]
+      }
+    },
+
     browserSync: {
       server: {
         bsFiles: {
@@ -100,4 +115,5 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("build", ["sass", "postcss", "csso", "svgstore"]);
 };

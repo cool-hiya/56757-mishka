@@ -8,6 +8,7 @@
     "autoprefixer": "7.2.x",
     "grunt": "1.0.x",
     "grunt-browser-sync": "2.2.x",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-watch": "1.0.x",
     "grunt-csso": "^2.2.1",
