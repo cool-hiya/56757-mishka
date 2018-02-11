@@ -40,11 +40,11 @@
         background-size: cover;
     }
 
-    &:hover::before {
+    &:hover {
         transform: scale(1.2);
     }
 
-    &:active::before {
+    &:active {
         transform: scale(0.8);
         opacity: 0.3;
     }
