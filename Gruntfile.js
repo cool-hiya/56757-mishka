@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          src: ["source/img/**/*.{png,jpg,svg}"],
+          src: ["build/img/**/*.{png,jpg,svg}"],
         }]
       }
     },
@@ -55,7 +55,8 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          src: ["source/img/**/*.{png,jpg}"],
+          src: ["build/img/**/*.{png,jpg}"],
+
         }]
       }
     },
@@ -80,7 +81,8 @@ module.exports = function (grunt) {
           src: [
             "fonts/**/*.{woff,woff2}",
             "img/**",
-            "js/**"
+            "js/**",
+            "*.html"
           ],
           dest: "build"
         }]
@@ -119,5 +121,5 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("build", ["clean", "copy", "sass", "postcss", "csso", "svgstore"]);
+  grunt.registerTask("build", ["clean", "copy", "sass", "postcss", "csso", "imagemin", "cwebp", "svgstore"]);
 };
