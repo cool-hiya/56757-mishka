@@ -68,7 +68,7 @@ module.exports = function (grunt) {
       },
       sprite: {
         files: {
-          "build/img/sprite.svg": ["source/img/icon-*.svg"]
+          "build/img/sprite.svg": ["source/img/to-sprite/icon-*.svg"]
         }
       },
     },
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
           cwd: "source",
           src: [
             "fonts/**/*.{woff,woff2}",
-            "img/**",
+            "img/*.{png,jpg,svg}",
             "js/**",
             "*.html"
           ],
