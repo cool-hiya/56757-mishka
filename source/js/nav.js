@@ -1,5 +1,5 @@
 
-var navMain = Array.from(document.querySelectorAll(".site-list__item"));
+var navMain = Array.prototype.slice.call(document.querySelectorAll(".site-list__item"));
 var navToggle = document.querySelector(".main-nav__toggle");
 
 navToggle.classList.remove("main-nav__toggle--no-js");

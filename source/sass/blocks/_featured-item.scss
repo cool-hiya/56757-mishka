@@ -36,19 +36,19 @@
 
 .featured-item__img {
     width: 100%;
+    max-width: 350px;
 }
 
 .featured-item__img-container {
     order: 1;
     align-self: center;
     margin-bottom: 20px;
-    width: 100%;
-    max-width: 350px;
 }
 
 .featured-item__features {
     max-width: 350px;
-    margin: 0 auto 27px;
+    margin: 0 0 27px;
+    align-self: center;
 }
 
 .featured-item__price {
@@ -88,6 +88,10 @@
         width: 50%;
         max-width: none;
         margin: 7px  0  0 45px;
+    }
+
+    .featured-item__img {
+        max-width: none;
     }
 
     .featured-item__features {
