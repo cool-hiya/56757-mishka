@@ -101,22 +101,34 @@
         margin: 0;
 
         & + & {
-            margin: 20px 0 0;
+            margin: 25px 0 0;
         }
     }
 
     .fieldset__control {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         margin: 0;
 
         & + & {
-            margin: 23px 0 0;
+            margin: 24px 0 0;
         }
     }
 }
 
 @media (min-width: $desktop-width) {
+    .fieldset {
+        padding: 49px 0;
+
+        &--tel {
+            padding-bottom: 0;
+        }
+
+        &--email {
+            padding-top: 25px;
+        }
+    }
+
     .fieldset__legend {
         width: 175px;
         padding-left: 60px;
@@ -136,6 +148,12 @@
 
         &:nth-child(4) {
             margin-bottom: 0;
+        }
+    }
+
+    .fieldset__control {
+        & + & {
+            margin: 26px 0 0;
         }
     }
 }

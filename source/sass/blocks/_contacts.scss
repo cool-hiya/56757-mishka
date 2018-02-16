@@ -67,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
     .contacts {
-        padding: 47px 50px 60px;
+        padding: 47px 50px 50px;
     }
 
     .contacts__title {
@@ -92,7 +92,7 @@
     .contacts__list {
         display: flex;
         padding: 0;
-        margin-bottom: 42px;
+        margin-bottom: 38px;
     }
 
     .contacts__contact {
@@ -120,7 +120,7 @@
     .contacts {
         display: block;
         max-width: $desktop-width;
-        padding: 130px 50px 105px 115px;
+        padding: 130px 50px 96px 115px;
         margin: 0 auto;
     }
 

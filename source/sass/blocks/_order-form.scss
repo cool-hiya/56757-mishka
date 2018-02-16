@@ -51,25 +51,24 @@
 
 @media (min-width: $desktop-width) {
     .order-form {
-        padding: 105px 0 53px;
+        padding: 105px 0 52px;
     }
 
     .order-form__center-wrapper {
-        padding: 0 calc((100% - #{$desktop-width} + 100px) / 2);
+        & > * {
+            max-width: 1050px;
+            margin: 0 auto;
+        }
     }
 
     .order-form__intro,
     .order-form__footer {
-        width: 700px;
-        margin-left: 175px;
+        padding-right: 175px;
+        padding-left: 175px;
     }
 
     .order-form__intro {
         margin-bottom: 10px;
         line-height: 29px;
-    }
-
-    .order-form__footer {
-        margin-top: -5px;
     }
 }

@@ -35,16 +35,16 @@
         padding: 0;
         flex-grow: 0;
 
-        &:hover {
+        &[href]:hover {
             opacity: 0.6;
         }
 
-        &:active {
+        &[href]:active {
             opacity: 0.3;
         }
     }
 
-    &:hover {
+    &[href]:hover {
         color: rgba(0, 0, 0, 0.6);
 
         .site-list__icon {
@@ -53,7 +53,7 @@
         }
     }
 
-    &:active {
+    &[href]:active {
         color: rgba(0, 0, 0, 0.3);
 
         .site-list__icon {
