@@ -35,6 +35,14 @@ module.exports = function (grunt) {
       }
     },
 
+    uglify: {
+      compress: {
+        files: {
+          "build/js/script.min.js": ["source/js/to-compress/*.js"]
+        }
+      }
+    },
+
     imagemin: {
       images: {
         options: {
@@ -81,7 +89,7 @@ module.exports = function (grunt) {
           src: [
             "fonts/**/*.{woff,woff2}",
             "img/*.{png,jpg,svg}",
-            "js/**",
+            "js/*.js",
             "*.html"
           ],
           dest: "build"
@@ -121,5 +129,5 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("build", ["clean", "copy", "sass", "postcss", "csso", "imagemin", "cwebp", "svgstore"]);
+  grunt.registerTask("build", ["clean", "copy", "sass", "postcss", "csso", "uglify", "imagemin", "cwebp", "svgstore"]);
 };
