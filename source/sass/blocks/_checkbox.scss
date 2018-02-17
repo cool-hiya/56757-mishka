@@ -20,13 +20,6 @@
     }
 }
 
-.checkbox__input {
-    position: absolute;
-    width: 0;
-    height: 0;
-    z-index: -100;
-}
-
 .checkbox__input:checked {
     + .checkbox__label::after {
         content: "";

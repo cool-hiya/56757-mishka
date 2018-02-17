@@ -23,13 +23,6 @@
     }
 }
 
-.radio__input {
-    position: absolute;
-    width: 0;
-    height: 0;
-    z-index: -100;
-}
-
 .radio__input:checked {
     & + .radio__label::after {
         content: "";
