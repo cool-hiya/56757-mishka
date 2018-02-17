@@ -141,15 +141,15 @@
 @media (min-width: $desktop-width) {
     .catalog-item {
         flex-direction: column;
+        margin: 0 50px 58px 0;
         width: calc((100% - 101px) / 3);
-        margin-bottom: 58px;
 
         & + & {
             margin-top: 0;
         }
 
-        &:not(:nth-child(3n)) {
-            margin-right: 50px;
+        &:nth-child(3n) {
+            margin-right: 0;
         }
     }
 
