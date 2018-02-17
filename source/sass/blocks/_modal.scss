@@ -36,6 +36,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 20px;
+    padding: 0 50px;
 }
 
 .modal__parametor-title {
@@ -58,10 +59,7 @@
     .modal__title {
         font-size: 30px;
         margin-bottom: 30px;
-
-        br {
-            display: none;
-        }
+        padding: 0;
     }
 
     .modal__parametor-title {
