@@ -38,7 +38,7 @@ module.exports = function (grunt) {
     uglify: {
       compress: {
         files: {
-          "build/js/script.min.js": ["source/js/to-compress/*.js"]
+          "build/js/script.min.js": ["source/js/*.js"]
         }
       }
     },
@@ -103,7 +103,7 @@ module.exports = function (grunt) {
           src: [
             "fonts/**/*.{woff,woff2}",
             "img/*.{png,jpg,svg}",
-            "js/*.js",
+            "js/vendor/*.js",
           ],
           dest: "build"
         }]
@@ -137,6 +137,14 @@ module.exports = function (grunt) {
       style: {
         files: ["source/sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"]
+      },
+      scripts: {
+        files: ["source/js/*.js"],
+        tasks: ["uglify"]
+      },
+      markup: {
+        files: ["source/*.html"],
+        tasks: ["htmlmin"]
       }
     }
   });
