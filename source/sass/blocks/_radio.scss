@@ -60,11 +60,11 @@
 @media (min-width: $tablet-width) {
     .radio__label {
         font-size: 19px;
-        align-items: center;
+        padding-top: 15px;
 
         &::before {
             margin-right: 30px;
-            margin-top: 0;
+            margin-top: -15px;
 
             @include setSize(52px, 52px);
         }
