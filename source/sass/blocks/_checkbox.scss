@@ -21,7 +21,10 @@
 }
 
 .checkbox__input {
-    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -100;
 }
 
 .checkbox__input:checked {
@@ -43,6 +46,12 @@
 .checkbox__input:active {
     + .checkbox__label::before {
         border-color: rgba(68, 68, 68, 0.3);
+    }
+}
+
+.checkbox__input:focus {
+    + .checkbox__label::before {
+        border-color: #62d1ba;
     }
 }
 

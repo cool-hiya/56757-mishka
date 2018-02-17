@@ -24,7 +24,10 @@
 }
 
 .radio__input {
-    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -100;
 }
 
 .radio__input:checked {
@@ -45,6 +48,12 @@
 .radio__input:active {
     + .radio__label::before {
         border-color: rgba(68, 68, 68, 0.3);
+    }
+}
+
+.radio__input:focus {
+    + .radio__label::before {
+        border-color: #62d1ba;
     }
 }
 
