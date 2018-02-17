@@ -35,6 +35,28 @@ module.exports = function (grunt) {
       }
     },
 
+    uglify: {
+      compress: {
+        files: {
+          "build/js/script.min.js": ["source/js/*.js"]
+        }
+      }
+    },
+
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          "build/index.html": "source/index.html",
+          "build/form.html": "source/form.html",
+          "build/catalog.html": "source/catalog.html"
+        }
+      }
+    },
+
     imagemin: {
       images: {
         options: {
@@ -81,8 +103,7 @@ module.exports = function (grunt) {
           src: [
             "fonts/**/*.{woff,woff2}",
             "img/*.{png,jpg,svg}",
-            "js/**",
-            "*.html"
+            "js/vendor/*.js",
           ],
           dest: "build"
         }]
@@ -116,10 +137,18 @@ module.exports = function (grunt) {
       style: {
         files: ["source/sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"]
+      },
+      scripts: {
+        files: ["source/js/*.js"],
+        tasks: ["uglify"]
+      },
+      markup: {
+        files: ["source/*.html"],
+        tasks: ["htmlmin"]
       }
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("build", ["clean", "copy", "sass", "postcss", "csso", "imagemin", "cwebp", "svgstore"]);
+  grunt.registerTask("build", ["clean", "copy", "htmlmin", "sass", "postcss", "csso", "uglify", "imagemin", "cwebp", "svgstore"]);
 };

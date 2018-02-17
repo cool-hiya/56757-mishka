@@ -8,6 +8,8 @@
   <title>Мишка</title>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body>
@@ -222,7 +224,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="footer__wrapper">
+    <div class="page-footer__wrapper">
       <div class="page-footer__logo-wrapper">
         <a class="page-footer__logo-link" aria-label="Мишка">
           <svg class="page-footer__logo" width="102" height="34" role="img">
@@ -279,14 +281,10 @@
       <button class="modal__button button button--green" type="button">Добавить</button>
     </div>
   </div>
-  <script src="js/picturefill-init.js" async></script>
-  <script src="js/picturefill.min.js" async></script>
-  <script src="js/svg4everybody.min.js"></script>
-  <script src="js/svg-init.js"></script>
-  <script src="js/nav.js"></script>
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="js/map.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/vendor/picturefill.min.js" async></script>
+  <script src="js/vendor/svg4everybody.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

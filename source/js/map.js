@@ -1,4 +1,4 @@
-ymaps.ready(init);
+if (typeof ymaps !== "undefined") ymaps.ready(init);
 
 function init() {
 
